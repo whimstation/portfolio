@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Natalia Tereshchenko — Art Director</title>
+<meta name="description" content="Арт-директор в области генеративных медиа. Режиссура мультимедиа, моушн-дизайн, генеративные системы.">
+<meta property="og:title" content="Natalia Tereshchenko — Art Director">
+<meta property="og:description" content="Режиссура мультимедиа, моушн-дизайн, генеративные системы">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{min-height:100vh;line-height:1.5;display:flex;flex-direction:column}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;border:0;background:transparent;color:inherit}
+iframe{border:0;display:block}
+
+:root{
+  --bg:#EDE8D9;--bg-2:#E5DFCD;--text:#1A1A1A;--text-secondary:#5B5A52;--text-muted:#A3A197;
+  --card:#D8D2C0;--card-hover:#CFC8B3;--accent:#E8E23C;--border:#C9C3B1;
+  --hero-dark:#1A1A1A;--hero-text:#EDE8D9;--transition:.25s ease;--max-width:1440px;
+  --pad-x:32px;--gap-col:24px;--nav-w:145px;--meta-w:180px;
+}
+html.dark{
+  --bg:#141413;--bg-2:#1C1B1A;--text:#EDE8D9;--text-secondary:#A3A197;--text-muted:#6B6A62;
+  --card:#2A2723;--card-hover:#34302B;--border:#3A3631;--hero-dark:#2A2723;--hero-text:#EDE8D9;
+}
+
+body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,system-ui,Roboto,sans-serif;font-size:14px;background:var(--bg);color:var(--text);font-feature-settings:'kern','liga';transition:background var(--transition),color var(--transition)}
+.mono{font-family:'IBM Plex Mono','Courier New',monospace}
+.serif{font-family:'Lora',Georgia,serif}
+
+html[lang="ru"] .lang-en{display:none}
+html[lang="en"] .lang-ru{display:none}
+
+.site-header{position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:.5px solid var(--border);transition:background var(--transition)}
+.site-header-inner{max-width:var(--max-width);margin:0 auto;padding:14px var(--pad-x);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.site-name{font-size:14px;font-weight:600}
+.site-meta{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-muted);letter-spacing:1.2px;text-transform:uppercase}
+.controls{display:flex;align-items:center;gap:18px}
+.lang-switcher,.theme-switcher{display:flex;align-items:center;gap:4px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:1px}
+.lang-btn,.theme-btn{padding:4px 8px;color:var(--text-muted);border:.5px solid transparent;border-radius:1px;transition:all var(--transition);font-size:10px;letter-spacing:1px;font-family:'IBM Plex Mono',monospace}
+.lang-btn:hover,.theme-btn:hover{color:var(--text)}
+.lang-btn.active{color:var(--text);border-color:var(--border)}
+.theme-btn{padding:4px;width:28px;height:28px;display:flex;align-items:center;justify-content:center}
+.burger{display:none;width:32px;height:32px;flex-direction:column;justify-content:center;gap:4px;padding:6px}
+.burger span{display:block;width:18px;height:1px;background:var(--text);transition:var(--transition)}
+.burger.open span:nth-child(1){transform:translateY(2.5px) rotate(45deg)}
+.burger.open span:nth-child(2){transform:translateY(-2.5px) rotate(-45deg)}
+
+.page{display:grid;grid-template-columns:var(--nav-w) 1fr var(--meta-w);gap:var(--gap-col);padding:24px var(--pad-x) 32px;max-width:var(--max-width);margin:0 auto;align-items:start;flex:1;width:100%}
+
+.side-nav{display:flex;flex-direction:column;gap:2px;position:sticky;top:80px}
+.side-nav a{font-size:22px;line-height:1.25;color:var(--text-muted);transition:color var(--transition);font-weight:400;padding:2px 0}
+.side-nav a:hover{color:var(--text)}
+.side-nav a.active{color:var(--text);font-weight:600}
+.side-nav-tag{margin-top:22px;font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--text-muted);letter-spacing:1.5px}
+
+.meta-col{font-size:11px;color:var(--text-secondary);line-height:1.55;position:sticky;top:80px}
+.meta-label{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--text-muted);letter-spacing:1.5px;margin-bottom:4px;margin-top:14px;text-transform:uppercase}
+.meta-label:first-child{margin-top:0}
+.meta-val{color:var(--text);font-size:11px;line-height:1.5}
+
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-muted);letter-spacing:1.2px;margin-bottom:12px;text-transform:uppercase}
+h1.hero-title{font-size:clamp(38px,6vw,64px);line-height:.95;letter-spacing:-1px;margin-bottom:8px;font-weight:600}
+.hero-sub{font-size:15px;color:var(--text-secondary);margin-bottom:36px;line-height:1.5}
+h2.section-title{font-size:32px;line-height:1;letter-spacing:-.5px;margin-bottom:8px;font-weight:600}
+.section-sub{font-size:12px;color:var(--text-secondary);margin-bottom:28px;font-style:italic;font-family:'Lora',Georgia,serif}
+
+section{padding:60px 0 40px;border-top:.5px solid var(--border);scroll-margin-top:80px}
+section:first-of-type{border-top:0;padding-top:12px}
+.section-label{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-secondary);letter-spacing:1.5px;margin-bottom:14px;padding-top:14px;border-top:.5px solid var(--border);text-transform:uppercase}
+.section-label:first-child{padding-top:0;border-top:0}
+
+.az-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px 24px;margin-bottom:36px}
+.az-row{font-size:12px;line-height:1.55;color:var(--text-secondary);border-bottom:.5px dotted var(--border);padding:5px 0}
+.az-letter{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text);margin-right:10px;font-weight:500}
+
+.status-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:12px}
+.status-card{background:var(--card);padding:14px 16px;border-radius:1px;transition:background var(--transition)}
+.status-card-label{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--text-secondary);letter-spacing:1.5px;margin-bottom:5px;text-transform:uppercase}
+.status-card-val{font-size:13px;color:var(--text);line-height:1.35}
+
+.work-track-label{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-muted);letter-spacing:1.5px;margin-bottom:10px;margin-top:22px;text-transform:uppercase}
+.work-row{display:grid;grid-template-columns:80px 1fr;gap:18px;padding:14px 0;border-bottom:.5px solid var(--border);font-size:13px;line-height:1.45;transition:background var(--transition);cursor:pointer;align-items:baseline}
+.work-row:hover{background:var(--bg-2)}
+.work-row-year{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-muted);letter-spacing:.5px}
+.work-row-title{font-weight:600;margin-bottom:4px;font-size:14px}
+.work-row-sub{color:var(--text-secondary);font-size:11.5px}
+
+.case-block{padding:48px 0;border-top:.5px solid var(--border)}
+.case-block:first-child{border-top:0;padding-top:8px}
+.case-eyebrow{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-muted);letter-spacing:1.2px;margin-bottom:8px;text-transform:uppercase}
+.case-title{font-size:34px;line-height:1.05;margin-bottom:6px;font-weight:600;letter-spacing:-.4px}
+.case-tag{font-style:italic;color:var(--text-secondary);margin-bottom:24px;font-family:'Lora',Georgia,serif;font-size:14px}
+
+.case-grid{display:grid;gap:5px;margin-bottom:24px}
+.case-grid-5x2{grid-template-columns:repeat(5,1fr)}
+.case-grid-4x2{grid-template-columns:repeat(4,1fr)}
+.case-grid-4{grid-template-columns:repeat(4,1fr);align-items:end}
+.case-grid-3{grid-template-columns:repeat(3,1fr)}
+.case-grid-2{grid-template-columns:repeat(2,1fr)}
+
+.case-tile{background:#1A1A1A;border-radius:1px;position:relative;overflow:hidden;min-height:60px}
+.case-tile-9-16{aspect-ratio:9/16}
+.case-tile-1-1{aspect-ratio:1/1}
+.case-tile-2-3{aspect-ratio:2/3}
+.case-tile-16-9{aspect-ratio:16/9}
+.case-tile-16-9-x2{aspect-ratio:16/9;grid-column:span 2}
+.case-tile iframe{position:absolute!important;top:0!important;left:0!important;width:100%!important;height:100%!important;border:0!important;display:block!important}
+#case-slowdive .case-tile iframe{left:-30%!important;width:130%!important}
+#case-g5 .case-tile iframe{left:-15%!important;width:115%!important}
+.ik-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.case-tile-label{position:absolute;bottom:5px;left:7px;font-size:7px;font-family:'IBM Plex Mono',monospace;color:rgba(237,232,217,.55);letter-spacing:.5px;z-index:2;pointer-events:none}
+.case-tile-format{position:absolute;top:5px;right:5px;font-size:6.5px;font-family:'IBM Plex Mono',monospace;color:#1A1A1A;background:rgba(232,226,60,.85);padding:2px 5px;letter-spacing:.5px;z-index:2;pointer-events:none}
+.case-tile-play{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:38px;height:28px;background:rgba(255,255,255,.92);border-radius:6px;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:1}
+.case-tile-play::after{content:'';width:0;height:0;border-left:10px solid #1A1A1A;border-top:6.5px solid transparent;border-bottom:6.5px solid transparent;margin-left:3px}
+
+.case-tile-card{background:#262421;color:rgba(237,232,217,.6);font-size:9px;padding:14px;text-align:center;line-height:1.4;font-family:'IBM Plex Mono',monospace;letter-spacing:.5px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;position:absolute;inset:0}
+.case-tile-card .ik-num{font-size:8px;color:rgba(237,232,217,.4)}
+.case-tile-card .ik-cat{font-size:9px;color:rgba(232,226,60,.85);letter-spacing:1px}
+.case-tile-card .ik-title{font-family:'Segoe UI',sans-serif;font-size:11px;color:rgba(237,232,217,.85);text-align:left;line-height:1.25}
+
+.case-meta-bar{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:14px;padding:18px 0;border-top:.5px solid var(--border);border-bottom:.5px solid var(--border);margin-bottom:28px}
+.case-meta-item{font-size:11px}
+.case-meta-l{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--text-muted);letter-spacing:1.3px;margin-bottom:4px;text-transform:uppercase}
+.case-meta-v{color:var(--text);line-height:1.4;font-size:11.5px}
+.case-meta-v.big{font-size:22px;line-height:1;font-weight:600;margin-bottom:2px}
+.case-meta-v.big-sub{font-size:9px;color:var(--text-secondary);line-height:1.3}
+
+.case-content-label{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--text-secondary);letter-spacing:1.5px;margin-bottom:6px;margin-top:18px;text-transform:uppercase}
+.case-content-label:first-child{margin-top:0}
+.case-content-text{font-size:13px;line-height:1.6;color:var(--text);margin-bottom:14px}
+
+.case-sub-label{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-secondary);letter-spacing:1.3px;margin:24px 0 10px;text-transform:uppercase;padding-top:14px;border-top:.5px solid var(--border)}
+.case-sub-text{font-size:13px;line-height:1.55;color:var(--text-secondary);margin-bottom:12px}
+
+.case-quote{font-family:'Lora',Georgia,serif;font-style:italic;font-size:16px;line-height:1.55;padding-left:14px;border-left:.5px solid var(--border);margin:18px 0 22px;color:var(--text)}
+
+.case-podcast{background:#2A2723;padding:18px;border-radius:1px;display:flex;gap:16px;align-items:center;margin-bottom:24px}
+html.dark .case-podcast{background:#0E0D0C}
+.case-podcast-icon{width:60px;height:60px;background:#4A4843;border-radius:5px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.case-podcast-icon::after{content:'';width:0;height:0;border-left:14px solid #EDE8D9;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px}
+.case-podcast-body{flex:1;color:#EDE8D9}
+.case-podcast-l{font-family:'IBM Plex Mono',monospace;font-size:9px;color:#A3A197;letter-spacing:1.5px;margin-bottom:4px}
+.case-podcast-t{font-size:14px;color:#EDE8D9;margin-bottom:4px;font-weight:600}
+.case-podcast-s{font-size:10.5px;color:#A3A197;line-height:1.5}
+.case-podcast-arrow{font-size:9px;font-family:'IBM Plex Mono',monospace;color:#A3A197;letter-spacing:1px;flex-shrink:0}
+
+.case-hero-video{aspect-ratio:16/9;background:#1A1A1A;border-radius:1px;margin-bottom:24px;position:relative;overflow:hidden}
+.case-hero-video iframe{width:100%;height:100%}
+
+.case-empty-tile{aspect-ratio:16/9;background:transparent;border:.5px dashed var(--border);display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--text-muted);letter-spacing:1px}
+
+.case-yellow-strip{background:var(--accent);padding:8px 14px;display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:1.3px;color:#1A1A1A;margin-top:24px;text-transform:uppercase;flex-wrap:wrap;gap:8px}
+
+.pillar{padding:22px 0;border-top:.5px solid var(--border)}
+.pillar:first-of-type{border-top:0;padding-top:6px}
+.pillar-head{display:grid;grid-template-columns:32px 1fr;gap:12px;margin-bottom:10px;align-items:baseline}
+.pillar-num{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-muted);letter-spacing:.5px}
+.pillar-title{font-size:22px;font-weight:600;line-height:1.1}
+.pillar-body{font-size:13px;line-height:1.55;padding-left:44px;margin-bottom:14px;color:var(--text)}
+.pillar-stack{font-size:12px;line-height:1.7;color:var(--text-secondary);padding-left:44px;font-family:'IBM Plex Mono',monospace}
+.pillar-stack strong{color:var(--text);font-weight:500}
+
+.note{padding:28px 0;border-top:.5px solid var(--border)}
+.note:first-of-type{border-top:0;padding-top:0}
+.note-num{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-muted);letter-spacing:1.5px;margin-bottom:6px}
+.note-title{font-size:22px;font-weight:600;line-height:1.1;margin-bottom:14px}
+.note-body{font-size:13px;line-height:1.65;color:var(--text)}
+.note-body p{margin-bottom:14px}
+.note-body p:last-child{margin-bottom:0}
+
+.writing-featured{background:var(--card);padding:22px;border-radius:1px;margin-bottom:28px;transition:background var(--transition)}
+.writing-featured-meta{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-secondary);letter-spacing:1.2px;margin-bottom:6px}
+.writing-featured-title{font-size:20px;line-height:1.2;margin-bottom:10px;font-weight:600}
+.writing-featured-text{font-size:13px;line-height:1.55;color:var(--text);margin-bottom:12px}
+.writing-link{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-secondary);letter-spacing:1px;word-break:break-all}
+.writing-link:hover{color:var(--text)}
+.writing-item{padding:22px 0;border-top:.5px solid var(--border)}
+.writing-item-head{display:flex;justify-content:space-between;gap:14px;align-items:baseline;margin-bottom:6px}
+.writing-item-title{font-size:18px;line-height:1.2;font-weight:600}
+.writing-item-platform{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-muted);letter-spacing:1px;white-space:nowrap}
+.writing-item-tag{font-style:italic;color:var(--text-secondary);font-size:12px;margin-bottom:10px;font-family:'Lora',Georgia,serif}
+.writing-item-text{font-size:13px;line-height:1.55;margin-bottom:10px}
+.short-notes{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:14px}
+.short-note{padding-top:12px;border-top:.5px solid var(--border)}
+.short-note-cat{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--text-muted);letter-spacing:1px;margin-bottom:6px}
+.short-note-title{font-size:14px;line-height:1.2;margin-bottom:6px;font-weight:600}
+.short-note-text{font-size:11px;line-height:1.5;color:var(--text-secondary)}
+
+.about-quote{font-family:'Lora',Georgia,serif;font-style:italic;font-size:17px;line-height:1.5;padding-left:16px;border-left:.5px solid var(--border);margin:18px 0 28px;color:var(--text)}
+.about-text{font-size:14px;line-height:1.65;margin-bottom:16px}
+.background-row{display:grid;grid-template-columns:100px 1fr;gap:14px;padding:8px 0;border-bottom:.5px dotted var(--border);font-size:12px}
+.background-year{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-muted);letter-spacing:.5px}
+
+.contact-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:24px 0}
+.contact-card{background:var(--card);padding:16px;border-radius:1px;display:flex;flex-direction:column;gap:6px;transition:background var(--transition)}
+.contact-card:hover{background:var(--card-hover)}
+.contact-card-label{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--text-secondary);letter-spacing:1.5px;text-transform:uppercase}
+.contact-card-val{font-size:14px;color:var(--text);font-weight:600}
+.contact-card-tag{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--text-muted);letter-spacing:1px;margin-top:auto}
+.format-row{display:grid;grid-template-columns:130px 1fr;gap:14px;padding:10px 0;border-bottom:.5px dotted var(--border);font-size:13px;line-height:1.45}
+.format-name{font-weight:600}
+.format-desc{color:var(--text-secondary)}
+
+.practice-table{display:grid;grid-template-columns:130px 1fr;gap:8px 18px;font-size:13px;line-height:1.55;margin-bottom:28px}
+.practice-cat{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-muted);letter-spacing:1px;padding-top:10px;border-top:.5px solid var(--border);text-transform:uppercase}
+.practice-cat:first-of-type{border-top:0;padding-top:4px}
+.practice-cell{padding-top:10px;border-top:.5px solid var(--border)}
+.practice-cell:first-of-type{border-top:0;padding-top:4px}
+.practice-cell strong{font-weight:600}
+.practice-cell-sub{font-size:11.5px;color:var(--text-secondary);line-height:1.5;margin-top:4px}
+.fest-table{display:grid;grid-template-columns:60px 1fr;gap:6px 14px;font-size:13px;line-height:1.5}
+.fest-year{font-family:'IBM Plex Mono',monospace;font-size:10px;color:var(--text-muted);padding-top:10px}
+.fest-cell{padding-top:10px;border-top:.5px solid var(--border)}
+.fest-cell:nth-of-type(1),.fest-year:nth-of-type(1){border-top:0;padding-top:0}
+
+.ticker{background:var(--accent);padding:12px var(--pad-x);display:flex;justify-content:space-between;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:1.5px;color:#1A1A1A;text-transform:uppercase}
+.ticker-center{flex:1;text-align:center}
+
+.tp{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--text-muted);letter-spacing:.5px;font-style:italic}
+
+@media (max-width:1024px){
+  :root{--nav-w:120px;--meta-w:150px;--pad-x:22px}
+  .side-nav a{font-size:18px}
+}
+@media (max-width:768px){
+  :root{--pad-x:18px}
+  .site-meta{display:none}
+  .burger{display:flex}
+  .controls{gap:10px}
+  .lang-switcher,.theme-switcher{gap:0}
+  .site-name{font-size:13px}
+  .page{grid-template-columns:1fr;gap:0;padding:18px var(--pad-x) 32px}
+  .side-nav{display:none;position:fixed;top:56px;left:0;right:0;background:var(--bg);padding:22px var(--pad-x);border-bottom:.5px solid var(--border);flex-direction:column;gap:4px;z-index:90}
+  .side-nav.open{display:flex}
+  .side-nav a{font-size:18px;padding:6px 0}
+  .side-nav-tag{display:none}
+  .meta-col{position:static;margin-top:28px;padding-top:22px;border-top:.5px solid var(--border)}
+  h1.hero-title{font-size:38px}
+  .case-title{font-size:24px}
+  .pillar-body,.pillar-stack{padding-left:0}
+  .short-notes{grid-template-columns:1fr}
+  .contact-cards{grid-template-columns:1fr}
+  .status-grid{grid-template-columns:1fr}
+  .az-grid{grid-template-columns:1fr}
+  .ticker{flex-direction:column;gap:6px;text-align:center;padding:10px var(--pad-x)}
+  .ticker>div{text-align:center}
+  .case-grid-5x2{grid-template-columns:repeat(2,1fr)}
+  .case-grid-4x2{grid-template-columns:repeat(2,1fr)}
+  .case-grid-4{grid-template-columns:repeat(2,1fr)}
+  .case-grid-3{grid-template-columns:1fr}
+  .case-tile-16-9-x2{grid-column:span 2}
+  .case-meta-bar{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:420px){
+  .lang-btn,.theme-btn{font-size:9px;padding:4px 6px}
+  .controls{gap:6px}
+}
+</style>
+<script>
+(function(){
+  try {
+    var p = new URLSearchParams(location.search);
+    var t = p.get('theme');
+    if (!t) { try { t = localStorage.getItem('nt-theme'); } catch(e){} }
+    if (!t) {
+      // First-ever visit: pick up system preference, then LOCK it in storage
+      // so subsequent navigation doesn't re-check system every time.
+      t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      try { localStorage.setItem('nt-theme', t); } catch(e){}
+    }
+    if (t === 'dark') document.documentElement.classList.add('dark');
+    var l = p.get('lang');
+    if (!l) { try { l = localStorage.getItem('nt-lang'); } catch(e){} }
+    if (!l) l = 'ru';
+    document.documentElement.setAttribute('lang', l);
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-name">Natalia Tereshchenko</div>
+    <div class="site-meta"><span class="lang-ru">PORTFOLIO · 05.2026</span><span class="lang-en">PORTFOLIO · 05.2026</span></div>
+    <div class="controls">
+      <div class="lang-switcher"><button class="lang-btn active" data-lang="ru">RU</button><button class="lang-btn" data-lang="en">EN</button></div>
+      <div class="theme-switcher"><button class="theme-btn" id="themeToggle" aria-label="Toggle theme"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button></div>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+
+  <nav class="side-nav" id="sideNav">
+    <a href="#home" class="nav-link active" data-section="home">Home</a>
+    <a href="#work" class="nav-link" data-section="work">Work</a>
+    <a href="#expertise" class="nav-link" data-section="expertise">Expertise</a>
+    <a href="#process" class="nav-link" data-section="process">Process</a>
+    <a href="#writing" class="nav-link" data-section="writing">Writing</a>
+    <a href="#about" class="nav-link" data-section="about">About</a>
+    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+    <div class="side-nav-tag">↑ ART DIRECTOR</div>
+  </nav>
+
+  <main>
+
+    <section id="home">
+      <div class="eyebrow">ART DIRECTOR · GENERATIVE MEDIA</div>
+      <h1 class="hero-title">Art Director</h1>
+      <p class="hero-sub"><span class="lang-ru">Режиссура мультимедиа, моушн-дизайн, генеративные системы</span><span class="lang-en">Multimedia direction, motion design, generative systems</span></p>
+
+      <div class="section-label">↓ EXPERTISE INDEX</div>
+      <div class="az-grid">
+        <div class="az-row"><span class="az-letter">A</span> Animation · Art Direction · AI Pipelines</div>
+        <div class="az-row"><span class="az-letter">C</span> Cinema 4D · Curatorial · Concept</div>
+        <div class="az-row"><span class="az-letter">D</span> Direction · Documentary · Digital</div>
+        <div class="az-row"><span class="az-letter">E</span> Editorial · Editing · Experimental</div>
+        <div class="az-row"><span class="az-letter">F</span> Film Production · Figma · Flux</div>
+        <div class="az-row"><span class="az-letter">G</span> Generative AI · Game Dev</div>
+        <div class="az-row"><span class="az-letter">H</span> Houdini · Hybrid Pipeline</div>
+        <div class="az-row"><span class="az-letter">I</span> Illustration · Installation</div>
+        <div class="az-row"><span class="az-letter">L</span> LLM · LoRA · Localization</div>
+        <div class="az-row"><span class="az-letter">M</span> Midjourney · Motion · Museums</div>
+        <div class="az-row"><span class="az-letter">N</span> Niagara · Narrative · New Media</div>
+        <div class="az-row"><span class="az-letter">P</span> Prompt Engineering · Performance</div>
+        <div class="az-row"><span class="az-letter">R</span> Real-time · Runway · Research</div>
+        <div class="az-row"><span class="az-letter">S</span> Stable Diffusion · Sound · Storytelling</div>
+        <div class="az-row"><span class="az-letter">T</span> TouchDesigner · Typography</div>
+        <div class="az-row"><span class="az-letter">U</span> Unreal Engine · UGC</div>
+        <div class="az-row"><span class="az-letter">V</span> Veo 3 · VFX · Video Production</div>
+        <div class="az-row"><span class="az-letter">W</span> Workflow Design · Writing</div>
+      </div>
+
+      <div class="section-label">↓ NOW</div>
+      <div class="status-grid">
+        <div class="status-card"><div class="status-card-label">STATUS</div><div class="status-card-val">Open to new projects</div></div>
+        <div class="status-card"><div class="status-card-label">FOCUS</div><div class="status-card-val">Film · Museums · EdTech · AI</div></div>
+        <div class="status-card"><div class="status-card-label">BASED</div><div class="status-card-val"><span class="lang-ru">Санкт-Петербург · Remote</span><span class="lang-en">St. Petersburg · Remote</span></div></div>
+        <div class="status-card"><div class="status-card-label">NEXT</div><div class="status-card-val"><span class="lang-ru">AI-инсталляция</span><span class="lang-en">AI installation</span></div></div>
+      </div>
+    </section>
+
+    <section id="work">
+      <h2 class="section-title">Work</h2>
+      <p class="section-sub"><span class="lang-ru">Два параллельных трека — Direction & Motion / Film & Editing</span><span class="lang-en">Two parallel tracks — Direction & Motion / Film & Editing</span></p>
+
+      <div class="work-track-label">DIRECTION & MOTION</div>
+      <a href="#case-slowdive" class="work-row"><div class="work-row-year">2024→</div><div><div class="work-row-title">SlowDive</div><div class="work-row-sub"><span class="lang-ru">Prompt motion direction · Приложение для медитаций</span><span class="lang-en">Prompt motion direction · Meditation app</span></div></div></a>
+      <a href="#case-recent" class="work-row"><div class="work-row-year">2023→</div><div><div class="work-row-title">Recent work / Freelance</div><div class="work-row-sub">Bumpin Pro · Kstudio · duality vpn</div></div></a>
+      <a href="#case-g5" class="work-row"><div class="work-row-year">2022–23</div><div><div class="work-row-title">G5 Games</div><div class="work-row-sub"><span class="lang-ru">Motion design · Международная геймдев-студия</span><span class="lang-en">Motion design · International game studio</span></div></div></a>
+      <a href="#case-iskusstvo" class="work-row"><div class="work-row-year">2022</div><div><div class="work-row-title"><span class="lang-ru">Журнал «Искусство кино»</span><span class="lang-en">Iskusstvo Kino Journal</span></div><div class="work-row-sub"><span class="lang-ru">Редакционный дизайн соц. сетей</span><span class="lang-en">Editorial social media design</span></div></div></a>
+      <a href="#case-setl" class="work-row"><div class="work-row-year">2018–21</div><div><div class="work-row-title">Setl Group</div><div class="work-row-sub">Motion · Video · Podcast production</div></div></a>
+
+      <div class="work-track-label">FILM & EDITING</div>
+      <a href="#case-on-off" class="work-row"><div class="work-row-year">2017–18</div><div><div class="work-row-title">On/Off studio</div><div class="work-row-sub"><span class="lang-ru">Режиссура · Руководство проектами</span><span class="lang-en">Direction · Project management</span></div></div></a>
+      <a href="#practice" class="work-row"><div class="work-row-year">2013→</div><div><div class="work-row-title">Practice & Festivals & Credits</div><div class="work-row-sub"><span class="lang-ru">Театр, ТВ, образование, аудио, авторские проекты</span><span class="lang-en">Theatre, TV, education, audio, personal work</span></div></div></a>
+    </section>
+
+    <section id="cases" style="border-top:0;padding-top:0">
+
+      <article class="case-block" id="case-slowdive">
+        <div class="case-eyebrow">2024 · DIRECTION & MOTION · CASE 01 / 06</div>
+        <h2 class="case-title">SlowDive</h2>
+        <p class="case-tag"><span class="lang-ru">Prompt motion direction для приложения для медитаций</span><span class="lang-en">Prompt motion direction for a meditation app</span></p>
+
+        <div class="case-content-label">↓ 10 CREATIVES · 9:16 · LOOPED</div>
+        <div class="case-grid case-grid-5x2">
+          <div class="case-tile case-tile-9-16"><iframe src="https://drive.google.com/file/d/1bKx7wh45VOxDGijDwgRup1zCVBtK0Owb/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-label">1195_KS 2</div></div>
+          <div class="case-tile case-tile-9-16"><iframe src="https://drive.google.com/file/d/1qVcXBnVY5nOz1T0NjujsUagpRtOoFxk_/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-label">1195_KS 1</div></div>
+          <div class="case-tile case-tile-9-16"><iframe src="https://drive.google.com/file/d/1q52Wnerh9KySKzU8FoqNKKNk-foR6x-r/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-label">1131_KS 8</div></div>
+          <div class="case-tile case-tile-9-16"><iframe src="https://drive.google.com/file/d/1qAyG-uac-mmvxcNlGDSdo4sZc7AfWOZJ/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-label">1134_KS 6</div></div>
+          <div class="case-tile case-tile-9-16"><iframe src="https://drive.google.com/file/d/1LjAIRk88CQaYwuPYwrJ_Q-yrsYM_af_z/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-label">1266_DK</div></div>
+          <div class="case-tile case-tile-9-16"><iframe src="https://drive.google.com/file/d/1vcdNPl4H1Y8Kl6TfkxYjR4tgosYGUxBM/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-label">1224_AM</div></div>
+          <div class="case-tile case-tile-9-16"><iframe src="https://drive.google.com/file/d/14B2ZQsg1T1WjTZiev4dTAOejJTDRoYzf/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-label">1177_AM</div></div>
+          <div class="case-tile case-tile-9-16"><iframe src="https://drive.google.com/file/d/1SHe2kVzlByoqP0bQpZ3ovhjH8isFp6QV/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-label">Monk_2</div></div>
+          <div class="case-tile case-tile-9-16"><iframe src="https://drive.google.com/file/d/1v6QRk1o8G505uKp4bG-UtudoMKvUkx2i/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-label">woman</div></div>
+          <div class="case-tile case-tile-9-16"><iframe src="https://drive.google.com/file/d/1J_xEnSLnaFIxAXTS_Ch93gMyV9fhsxmO/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-label">924_NM</div></div>
+        </div>
+
+        <div class="case-meta-bar">
+          <div class="case-meta-item"><div class="case-meta-l">YEAR</div><div class="case-meta-v">2024</div></div>
+          <div class="case-meta-item"><div class="case-meta-l">CLIENT</div><div class="case-meta-v">SlowDive · <span class="lang-ru">Москва</span><span class="lang-en">Moscow</span></div></div>
+          <div class="case-meta-item"><div class="case-meta-l">ROLE</div><div class="case-meta-v">Prompt motion direction</div></div>
+          <div class="case-meta-item"><div class="case-meta-l">FORMAT</div><div class="case-meta-v">9:16 · TikTok / Reels</div></div>
+          <div class="case-meta-item"><div class="case-meta-l">CREATIVES</div><div class="case-meta-v">10 in showcase</div></div>
+        </div>
+
+        <div class="lang-ru">
+          <div class="case-content-label">↓ КОНТЕКСТ</div>
+          <p class="case-content-text">SlowDive — приложение для медитаций, на рынке с performance-креативами. Креативы в этой нише быстро выгорают: алгоритмы Meta и TikTok требуют высокой частоты обновления, а стоковое и съёмочное производство не успевают за ритмом тестирования гипотез.</p>
+          <div class="case-content-label">↓ ЗАДАЧА</div>
+          <p class="case-content-text">Выстроить пайплайн, способный поставлять разнообразные рекламные креативы для платной рекламы с достаточной вариативностью, чтобы отстроить продукт от категорийного шума.</p>
+          <div class="case-content-label">↓ ПОДХОД</div>
+          <p class="case-content-text">Работа шла четырьмя итерациями. Первая — разбор креативов конкурентов в TikTok Ads Library, Facebook Ads Library и adheart.me: повторяющиеся паттерны категории и визуальные дыры, в которые она не заходит. Вторая — библиотека промптов и референсов под внутренние категории приложения, с закреплённым стилистическим языком для каждой. Третья — производственный пайплайн: статика в Midjourney и Stable Diffusion с доводкой в Photoshop, анимация в Runway, KLING, Luma и Vidu, UGC через arcads.ai и HeyGen, звук в Suno и ElevenLabs, финальная сборка и ресайзы в After Effects и Topaz AI. Четвёртая — итерации с продюсерами: разборы результатов тестов, адаптация работающих решений конкурентов под визуальный язык продукта.</p>
+          <div class="case-content-label">↓ РОЛЬ</div>
+          <p class="case-content-text">Вела визуальное направление креативов от формулировки гипотезы до финальной сборки. Промпт-инженерия, построение библиотеки, анализ конкурентов, сборка в постпродакшне.</p>
+          <div class="case-content-label">↓ РЕЗУЛЬТАТ</div>
+          <p class="case-content-text">Набор перформящих креативов для платной рекламы. Пайплайн, в который команда могла закладывать новые визуальные гипотезы без пересборки процесса.</p>
+          <div class="case-content-label">↓ STACK</div>
+          <p class="case-content-text" style="color:var(--text-secondary);font-size:11.5px;font-family:'IBM Plex Mono',monospace;line-height:1.7">Midjourney · Stable Diffusion · Runway · KLING · Luma · Vidu · HeyGen · arcads.ai · Suno · ElevenLabs · Topaz AI · Claude · GPT · After Effects · Premiere Pro</p>
+        </div>
+        <div class="lang-en">
+          <div class="case-content-label">↓ CONTEXT</div>
+          <p class="case-content-text">SlowDive is a meditation app competing in a saturated performance-ad space. Creatives in this niche burn out fast — Meta and TikTok algorithms reward high refresh rates, and stock or shoot-based production can't keep up with the hypothesis-testing cycle.</p>
+          <div class="case-content-label">↓ BRIEF</div>
+          <p class="case-content-text">Build a pipeline capable of supplying varied paid-ad creatives with enough range to set the product apart from the category noise.</p>
+          <div class="case-content-label">↓ APPROACH</div>
+          <p class="case-content-text">The work moved through four iterations. First — competitor breakdown via TikTok Ads Library, Facebook Ads Library and adheart.me. Second — a prompt and reference library mapped to the app's internal categories. Third — the production pipeline: stills in Midjourney and Stable Diffusion with finishing in Photoshop, animation in Runway, KLING, Luma and Vidu, UGC through arcads.ai and HeyGen, audio in Suno and ElevenLabs, final assembly in After Effects and Topaz AI. Fourth — iteration loops with producers: reading test results, adapting working solutions into the product's visual language.</p>
+          <div class="case-content-label">↓ ROLE</div>
+          <p class="case-content-text">Led the visual direction of creatives from hypothesis to final assembly. Prompt engineering, library construction, competitor analysis, post-production assembly.</p>
+          <div class="case-content-label">↓ OUTCOME</div>
+          <p class="case-content-text">A set of performing creatives for paid ads. A pipeline the team could feed new visual hypotheses into without rebuilding the process.</p>
+          <div class="case-content-label">↓ STACK</div>
+          <p class="case-content-text" style="color:var(--text-secondary);font-size:11.5px;font-family:'IBM Plex Mono',monospace;line-height:1.7">Midjourney · Stable Diffusion · Runway · KLING · Luma · Vidu · HeyGen · arcads.ai · Suno · ElevenLabs · Topaz AI · Claude · GPT · After Effects · Premiere Pro</p>
+        </div>
+
+        <div class="case-yellow-strip"><div>CASE 01 / 06</div><div>PROMPT MOTION DIRECTION FOR A MEDITATION APP</div><div>↑ INDEX</div></div>
+      </article>
+
+      <article class="case-block" id="case-recent">
+        <div class="case-eyebrow">2023→ · DIRECTION & MOTION · CASE 02 / 06</div>
+        <h2 class="case-title">Recent work / Freelance</h2>
+        <p class="case-tag"><span class="lang-ru">Примеры кейсов: Bumpin Pro, Kstudio, duality vpn</span><span class="lang-en">Selected cases: Bumpin Pro, Kstudio, duality vpn</span></p>
+
+        <div class="case-meta-bar">
+          <div class="case-meta-item"><div class="case-meta-l">PERIOD</div><div class="case-meta-v">2023 → <span class="lang-ru">настоящее</span><span class="lang-en">present</span></div></div>
+          <div class="case-meta-item"><div class="case-meta-l">CLIENTS</div><div class="case-meta-v">Bumpin Pro · Kstudio · duality vpn</div></div>
+          <div class="case-meta-item"><div class="case-meta-l">INDUSTRIES</div><div class="case-meta-v"><span class="lang-ru">Бизнес-приложения · Геймдев · IT-сервисы</span><span class="lang-en">Apps · Game dev · IT services</span></div></div>
+          <div class="case-meta-item"><div class="case-meta-l">ROLE</div><div class="case-meta-v">Motion · Editor · Prompt-driven</div></div>
+        </div>
+
+        <div class="case-sub-label" style="border-top:0;padding-top:0;margin-top:0">↓ BUMPIN PRO · <span class="lang-ru">ПРИЛОЖЕНИЕ ДЛЯ БИЗНЕС-ЗНАКОМСТВ</span><span class="lang-en">BUSINESS NETWORKING APP</span></div>
+        <p class="case-sub-text"><span class="lang-ru">Сборка рекламных роликов из стоковых видео. Концепт — приложение для деловых знакомств в неожиданных местах: кинозал, спортзал, кафе. Работа с готовым материалом без съёмки: подбор стоков, монтаж под концепт, ритмическая сборка.</span><span class="lang-en">Stock-based ad assembly. Concept — a business networking app for unexpected places: cinema, gym, café.</span></p>
+        <div class="case-grid case-grid-3">
+          <div class="case-tile case-tile-1-1"><iframe src="https://drive.google.com/file/d/1i8oNiqK__AU8RKt10XEap6kTWUi2IgeZ/preview" allow="autoplay" loading="lazy"></iframe></div>
+          <div></div><div></div>
+        </div>
+
+        <div class="case-sub-label">↓ KSTUDIO · <span class="lang-ru">ИГРОВЫЕ МОУШН-КРЕАТИВЫ</span><span class="lang-en">GAME MOTION CREATIVES</span></div>
+        <p class="case-sub-text"><span class="lang-ru">Создание моушн-креативов под разные гейм-студии в формате фриланс-сотрудничества с Kstudio. Работа с готовыми ассетами клиентов: анимация, композ, адаптация под форматы рекламных площадок.</span><span class="lang-en">Motion creatives for various game studios in freelance collaboration with Kstudio. Work with client-supplied assets.</span></p>
+        <div class="case-grid case-grid-3">
+          <div class="case-tile case-tile-1-1"><iframe src="https://drive.google.com/file/d/1hZ7JLuvlxXyHsmNMCJ7ziWvDkT9Rb_Nn/preview" allow="autoplay" loading="lazy"></iframe></div>
+          <div class="case-tile case-tile-1-1"><iframe src="https://drive.google.com/file/d/1ct7z1eRNR2yUrFJBgN4hDbNTIa0tfKZR/preview" allow="autoplay" loading="lazy"></iframe></div>
+          <div class="case-tile case-tile-1-1"><iframe src="https://drive.google.com/file/d/1ynbKj3pKOnfjbfFbtPlq8IoOuS8Z-_a2/preview" allow="autoplay" loading="lazy"></iframe></div>
+        </div>
+
+        <div class="case-sub-label">↓ DUALITY VPN · <span class="lang-ru">ОБУЧАЮЩИЕ КРЕАТИВЫ + AI-ДОРАБОТКА</span><span class="lang-en">EDUCATIONAL CREATIVES + AI POST-PROCESSING</span></div>
+        <p class="case-sub-text"><span class="lang-ru">Обучающие креативы для приложения и доработка сырых нейросетевых заготовок: концепт в Figma, анимация в After Effects, редактирование сгенерированного материала, исправление неточностей AI-вывода. Гибридный пайплайн на стыке ручной работы и генеративных инструментов.</span><span class="lang-en">Educational creatives plus refinement of raw neural-network outputs.</span></p>
+        <div class="case-grid case-grid-3">
+          <div class="case-tile case-tile-9-16"><iframe src="https://drive.google.com/file/d/1zslegw1UB5wzZ7fiJueARCYu4af3Mnya/preview" allow="autoplay" loading="lazy"></iframe></div>
+          <div></div><div></div>
+        </div>
+
+        <div class="lang-ru">
+          <div class="case-content-label">↓ КОНТЕКСТ</div>
+          <p class="case-content-text">Текущая фриланс-практика: примеры кейсов из трёх индустрий — приложение для бизнес-знакомств, гейм-студии, IT-сервис. Каждый проект работает с разным типом исходного материала: стоковые видео, готовые игровые ассеты, нейросетевые заготовки. Общее у всех работ — короткий цикл от брифа до сдачи и встроенность в клиентский продакшн без длительной адаптации.</p>
+          <div class="case-content-label">↓ ПОДХОД</div>
+          <p class="case-content-text">Три типа исходного материала — три рабочих режима. С Bumpin Pro работаю как монтажёр-сборщик: подбор стоков под концепт, ритмическая сборка, минимальная пост-обработка. С Kstudio — как моушн-дизайнер на чужих ассетах: анимация, композ, адаптация под форматы. С duality vpn — как редактор гибридного пайплайна: формулировка концепта в Figma, анимация в After Effects, доводка нейросетевого вывода. В каждой работе — разный объём авторской свободы и разный тип ответственности.</p>
+          <div class="case-content-label">↓ РЕЗУЛЬТАТ</div>
+          <p class="case-content-text">Постоянные клиентские отношения с продуктами в разных индустриях. Текущая параллельная работа без зависимости от одной отрасли или одного типа материала.</p>
+        </div>
+        <div class="lang-en">
+          <div class="case-content-label">↓ CONTEXT</div>
+          <p class="case-content-text">Three types of source material, three working modes. With Bumpin Pro — as a montage editor: stock selection on concept, rhythmic assembly, minimal post. With Kstudio — as a motion designer on someone else's assets: animation, compositing, format adaptation. With duality vpn — as redactor of a hybrid pipeline: concept in Figma, animation in After Effects, neural-net output refinement.</p>
+          <div class="case-content-label">↓ APPROACH</div>
+          <p class="case-content-text">Three different briefs, three different pipelines. Each project required its own kind of accountability for outcome.</p>
+          <div class="case-content-label">↓ OUTCOME</div>
+          <p class="case-content-text">Sustained client relationships with products in different industries. Parallel work without compromising fidelity to a single brief or material type.</p>
+        </div>
+
+        <div class="case-yellow-strip"><div>CASE 02 / 06</div><div>FREELANCE — SELECTED CASES</div><div>↑ INDEX</div></div>
+      </article>
+
+      <article class="case-block" id="case-g5">
+        <div class="case-eyebrow">2022–23 · DIRECTION & MOTION · CASE 03 / 06</div>
+        <h2 class="case-title">G5 Games</h2>
+        <p class="case-tag"><span class="lang-ru">Motion design для рекламных креативов</span><span class="lang-en">Motion design for advertising creatives</span></p>
+
+        <div class="case-content-label">↓ 7 CREATIVES · MIXED FORMATS · MIXED LOCALES</div>
+        <div class="case-grid case-grid-4">
+          <div class="case-tile case-tile-9-16"><iframe src="https://drive.google.com/file/d/1rJ_lGW8WreyDE5_d8J7FUmN2hvT_tzuB/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-format">9:16 · IT</div><div class="case-tile-label">slk_sd_027</div></div>
+          <div class="case-tile case-tile-2-3"><iframe src="https://drive.google.com/file/d/1UU8DrIq0fS30wRTbIz5S55quh7k77dJX/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-format">2:3</div><div class="case-tile-label">slk_ML0332</div></div>
+          <div class="case-tile case-tile-16-9-x2"><iframe src="https://drive.google.com/file/d/1WrOx8oJZr2K2R0BvT1lCmso4ZsFAnwGb/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-format">16:9</div><div class="case-tile-label">Hidden Mystery</div></div>
+        </div>
+        <div class="case-grid case-grid-4">
+          <div class="case-tile case-tile-9-16"><iframe src="https://drive.google.com/file/d/1jvWlGFvdCt-V_o-s2-j0OQxM-uVFzpvZ/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-format">9:16</div><div class="case-tile-label">jow_ST0194</div></div>
+          <div class="case-tile case-tile-1-1"><iframe src="https://drive.google.com/file/d/1SLi8l-rc8zNFDyUvUvIbUi9c_xbypfbX/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-format">1:1</div><div class="case-tile-label">slk_ML0176</div></div>
+          <div class="case-tile case-tile-1-1"><iframe src="https://drive.google.com/file/d/1LtjM3RRp2KmPyDEaaKLyRTDe016EsR6L/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-format">1:1 · 14s</div><div class="case-tile-label">slk_rewards</div></div>
+          <div class="case-tile case-tile-2-3"><iframe src="https://drive.google.com/file/d/1gMH_DTVEZyySXwh3Ug-NfMNCVUjQAe9H/preview" allow="autoplay" loading="lazy"></iframe><div class="case-tile-format">2:3</div><div class="case-tile-label">jod_ST0003</div></div>
+        </div>
+
+        <div class="case-meta-bar">
+          <div class="case-meta-item"><div class="case-meta-l">YEARS</div><div class="case-meta-v">2022–2023</div></div>
+          <div class="case-meta-item"><div class="case-meta-l">CLIENT</div><div class="case-meta-v">G5 Games</div></div>
+          <div class="case-meta-item"><div class="case-meta-l">ROLE</div><div class="case-meta-v">Motion designer</div></div>
+          <div class="case-meta-item"><div class="case-meta-l">GAMES</div><div class="case-meta-v">Sherlock · Hidden Mystery · Jewels of the Wild West · DaVinci Legends</div></div>
+          <div class="case-meta-item"><div class="case-meta-l">LOCALIZATION</div><div class="case-meta-v">EN · IT · ZH-TW</div></div>
+        </div>
+
+        <div class="lang-ru">
+          <div class="case-content-label">↓ КОНТЕКСТ</div>
+          <p class="case-content-text">G5 Games — международная студия с портфолио мидкорных мобильных игр, ориентированных на глобальный рынок. Рекламные креативы для мидкора работают по другим законам, чем для казуальных проектов: они должны удерживать внимание дольше, считываться на разных рынках без перевода игрового опыта и проходить A/B-тесты в рекламных кабинетах, где метрика retention rate напрямую определяет жизнеспособность креатива.</p>
+          <div class="case-content-label">↓ ЗАДАЧА</div>
+          <p class="case-content-text">Производство анимационных рекламных креативов для мидкорных игр студии — от сценарной идеи до финальной сборки, ресайзов под форматы площадок и локализационных версий. Работа внутри установленного пайплайна международной студии, в команде более тридцати моушн-дизайнеров, с регулярным взаимодействием со смежными отделами.</p>
+          <div class="case-content-label">↓ ПОДХОД</div>
+          <p class="case-content-text">Анимация и композитинг в After Effects, персонажная анимация в Spine, движковые сцены в Unreal Engine, запись и монтаж игровых билдов, саунд-дизайн под каждый креатив. Локализация и ресайзы — отдельный плотный слой работы: один и тот же креатив адаптировался под разные языки и под все основные форматы площадок (9:16, 1:1, 2:3, 16:9).</p>
+          <div class="case-content-label">↓ РОЛЬ</div>
+          <p class="case-content-text">Motion designer в команде рекламных креативов. Отвечала за полный производственный цикл собственных креативов — от сценарной идеи до финальной сдачи и локализации.</p>
+          <div class="case-content-label">↓ РЕЗУЛЬТАТ</div>
+          <p class="case-content-text">Креативы, которые показывали высокий retention rate при анализе рекламных кампаний — метрика, по которой в мобильной рекламе считывается способность удерживать холодную аудиторию дольше первых секунд просмотра.</p>
+          <div class="case-content-label">↓ STACK</div>
+          <p class="case-content-text" style="color:var(--text-secondary);font-size:11.5px;font-family:'IBM Plex Mono',monospace;line-height:1.7">After Effects · Spine · Unreal Engine · Premiere Pro · Photoshop · Illustrator</p>
+        </div>
+        <div class="lang-en">
+          <div class="case-content-label">↓ CONTEXT</div>
+          <p class="case-content-text">G5 Games is an international studio with a portfolio of midcore mobile titles targeting global markets. Ad creatives for midcore play by different rules than casual: they must hold attention longer, read across markets without translating gameplay, and survive A/B tests where retention rate directly determines a creative's viability.</p>
+          <div class="case-content-label">↓ BRIEF</div>
+          <p class="case-content-text">Production of animated ad creatives for the studio's midcore titles — from scripted idea to final assembly, resizes for platform formats, and localised versions. Work inside an established international pipeline, on a team of more than thirty motion designers.</p>
+          <div class="case-content-label">↓ APPROACH</div>
+          <p class="case-content-text">Animation and compositing in After Effects, character animation in Spine, engine scenes in Unreal Engine, game-build capture and editing, sound design per creative. Localisation and resizes were a dense layer of work in themselves: the same creative adapted across languages and across all major platform aspect ratios (9:16, 1:1, 2:3, 16:9).</p>
+          <div class="case-content-label">↓ ROLE</div>
+          <p class="case-content-text">Motion designer on the ad-creatives team. Owned the full production cycle of my own creatives — from scripted idea to final delivery and localisation.</p>
+          <div class="case-content-label">↓ OUTCOME</div>
+          <p class="case-content-text">Creatives that produced high retention rate in campaign analytics — the mobile-ad metric that reads whether a piece can hold a cold audience past the first seconds of view.</p>
+          <div class="case-content-label">↓ STACK</div>
+          <p class="case-content-text" style="color:var(--text-secondary);font-size:11.5px;font-family:'IBM Plex Mono',monospace;line-height:1.7">After Effects · Spine · Unreal Engine · Premiere Pro · Photoshop · Illustrator</p>
+        </div>
+
+        <div class="case-yellow-strip"><div>CASE 03 / 06</div><div>MOTION DESIGN FOR MIDCORE MOBILE GAME ADS</div><div>↑ INDEX</div></div>
+      </article>
+
+      <article class="case-block" id="case-iskusstvo">
+        <div class="case-eyebrow">2022 · DIRECTION & MOTION · CASE 04 / 06</div>
+        <h2 class="case-title"><span class="lang-ru">Журнал «Искусство кино»</span><span class="lang-en">Iskusstvo Kino Journal</span></h2>
+        <p class="case-tag"><span class="lang-ru">Редакционный дизайн соц. сетей · Издаётся с 1931</span><span class="lang-en">Editorial social media design · Published since 1931</span></p>
+
+        <div class="case-content-label">↓ 8 EDITORIAL CARDS · 8 GENRES · 9:16</div>
+        <div class="case-grid case-grid-4x2">
+          <div class="case-tile case-tile-9-16"><img src="assets/iskusstvo/01.jpg" alt="Konchalovsky: Fragments" class="ik-img" loading="lazy"></div>
+          <div class="case-tile case-tile-9-16"><img src="assets/iskusstvo/02.jpg" alt=""Asya's Happiness"" class="ik-img" loading="lazy"></div>
+          <div class="case-tile case-tile-9-16"><img src="assets/iskusstvo/03.jpg" alt=""I Walk Around Moscow"" class="ik-img" loading="lazy"></div>
+          <div class="case-tile case-tile-9-16"><img src="assets/iskusstvo/04.jpg" alt=""Convenience Store" by Borodin" class="ik-img" loading="lazy"></div>
+          <div class="case-tile case-tile-9-16"><img src="assets/iskusstvo/05.jpg" alt="Berlinale · Artdocfest · Oscars" class="ik-img" loading="lazy"></div>
+          <div class="case-tile case-tile-9-16"><img src="assets/iskusstvo/06.jpg" alt="Manga and anime" class="ik-img" loading="lazy"></div>
+          <div class="case-tile case-tile-9-16"><img src="assets/iskusstvo/07.jpg" alt="Zhora Kryzhovnikov" class="ik-img" loading="lazy"></div>
+          <div class="case-tile case-tile-9-16"><img src="assets/iskusstvo/08.jpg" alt="Book on "Asya's Happiness"" class="ik-img" loading="lazy"></div>
+        </div>
+
+        <div class="case-meta-bar">
+          <div class="case-meta-item"><div class="case-meta-l">YEAR</div><div class="case-meta-v">2022</div></div>
+          <div class="case-meta-item"><div class="case-meta-l">CLIENT</div><div class="case-meta-v"><span class="lang-ru">«Искусство кино» · Москва</span><span class="lang-en">Iskusstvo Kino · Moscow</span></div></div>
+          <div class="case-meta-item"><div class="case-meta-l">PUBLISHED SINCE</div><div class="case-meta-v big">1931</div></div>
+          <div class="case-meta-item"><div class="case-meta-l">ROLE</div><div class="case-meta-v"><span class="lang-ru">Designer · Соц. сети</span><span class="lang-en">Designer · Social media</span></div></div>
+          <div class="case-meta-item"><div class="case-meta-l">FORMAT</div><div class="case-meta-v">9:16 · <span class="lang-ru">Сторис</span><span class="lang-en">Stories</span></div></div>
+        </div>
+
+        <div class="lang-ru">
+          <div class="case-content-label">↓ КОНТЕКСТ</div>
+          <p class="case-content-text">«Искусство кино» — старейший европейский журнал о кинематографе, издаётся с 1931 года. Издание с такой историей и с таким читателем работает в специфическом редакционном режиме: каждая публикация встроена в интеллектуальную традицию, которую журнал формировал десятилетиями, и одновременно должна соответствовать ритму современных цифровых коммуникаций.</p>
+          <div class="case-content-label">↓ ЗАДАЧА</div>
+          <p class="case-content-text">Оформление всех онлайн-коммуникаций журнала: новостные карточки в постах и сторис, анонсы публикаций, тестовые интерактивы, серии-карусели, визуальное сопровождение редакционного потока. Соблюдение гайдлайна и скорости новостных таймингов. Дополнительно — корректорская приёмка новостных материалов перед публикацией.</p>
+          <div class="case-content-label">↓ ПОДХОД</div>
+          <p class="case-content-text">Работа была устроена не как дизайн-проектирование, а как встроенность в ежедневный поток редакции: обсуждение повестки, быстрая отрисовка карточек под конкретную новость или материал, сдача в публикацию в тот же день. В таком режиме ценится не оригинальность каждого решения, а способность держать единую визуальную интонацию на дистанции сотен публикаций.</p>
+          <div class="case-content-label">↓ РОЛЬ</div>
+          <p class="case-content-text">Дизайнер онлайн-коммуникаций. Отвечала за визуальное оформление новостного потока журнала в соц. сетях, соблюдение гайдлайна и скорости публикаций, корректорскую приёмку материалов.</p>
+          <div class="case-content-label">↓ РЕЗУЛЬТАТ</div>
+          <p class="case-content-text">Полгода встроенной работы в редакционном потоке одного из старейших изданий о кино в Европе. Опыт, который я дальше использую как профессиональную оптику: во всякой работе с текстом, кинокритикой и редакционными проектами.</p>
+        </div>
+        <div class="lang-en">
+          <div class="case-content-label">↓ CONTEXT</div>
+          <p class="case-content-text">Iskusstvo Kino is the oldest European film journal, published since 1931. A publication with this history and this reader works in a specific editorial register: every release sits inside an intellectual tradition the journal has built over decades, and at the same time must keep the pace of contemporary digital communication.</p>
+          <div class="case-content-label">↓ BRIEF</div>
+          <p class="case-content-text">Design of all online communications for the journal: news cards in posts and stories, publication announcements, visual support for the editorial flow. Adherence to the journal's guideline and the speed of news cycles. Additionally — proofreading news materials before publication.</p>
+          <div class="case-content-label">↓ APPROACH</div>
+          <p class="case-content-text">The work was structured not as design projects but as embeddedness in the daily editorial flow: agenda discussions, fast card production for a specific news item or material, same-day delivery. In this mode, what gets valued is not the originality of each decision but the ability to hold a single visual intonation across hundreds of publications.</p>
+          <div class="case-content-label">↓ ROLE</div>
+          <p class="case-content-text">Designer for online communications. Responsible for the visual design of the journal's news flow, adherence to the guideline and the speed of publication, and for proofreading material on intake.</p>
+          <div class="case-content-label">↓ OUTCOME</div>
+          <p class="case-content-text">Six months of embedded work in the editorial flow of one of Europe's oldest film publications. An experience that since shapes professional vision: in any work with text, film criticism, and editorial projects.</p>
+        </div>
+
+        <div class="case-yellow-strip"><div>CASE 04 / 06</div><div>EDITORIAL DESIGN FOR EUROPE'S OLDEST FILM JOURNAL</div><div>↑ INDEX</div></div>
+      </article>
+
+      <article class="case-block" id="case-setl">
+        <div class="case-eyebrow">2018–21 · DIRECTION & MOTION · CASE 05 / 06</div>
+        <h2 class="case-title">Setl Group</h2>
+        <p class="case-tag"><span class="lang-ru">Motion, video, podcast production · 2 года 4 месяца</span><span class="lang-en">Motion, video, podcast production · 2 years 4 months</span></p>
+
+        <div class="case-content-label">↓ HERO</div>
+        <div class="case-hero-video"><iframe src="https://drive.google.com/file/d/1Br4pbxLxjRALI480nUCJXWRGLRZWVfvl/preview" allow="autoplay" loading="lazy"></iframe></div>
+
+        <div class="case-content-label">↓ <span class="lang-ru">ОБУЧАЮЩАЯ СЕРИЯ ПРО ИПОТЕКУ · 5 ВИДЕО</span><span class="lang-en">MORTGAGE SERIES · 5 VIDEOS</span></div>
+        <div class="case-grid case-grid-3" style="margin-bottom:5px">
+          <div class="case-tile case-tile-16-9"><iframe src="https://www.youtube-nocookie.com/embed/IdjfGNnEJZ8?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe></div>
+          <div class="case-tile case-tile-16-9"><iframe src="https://www.youtube-nocookie.com/embed/4USr0ds-Pts?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe></div>
+          <div class="case-tile case-tile-16-9"><iframe src="https://www.youtube-nocookie.com/embed/Y5eHpqU412Y?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe></div>
+        </div>
+        <div class="case-grid case-grid-3">
+          <div class="case-tile case-tile-16-9"><iframe src="https://www.youtube-nocookie.com/embed/JVDcFhWzQX0?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe></div>
+          <div class="case-tile case-tile-16-9"><iframe src="https://www.youtube-nocookie.com/embed/mNnjZSLsuC8?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe></div>
+          <div class="case-empty-tile">5 / 5</div>
+        </div>
+
+        <div class="case-content-label">↓ <span class="lang-ru">ОТДЕЛЬНЫЙ ВЫПУСК</span><span class="lang-en">STANDALONE EPISODE</span></div>
+        <div class="case-hero-video"><iframe src="https://www.youtube-nocookie.com/embed/1G7r0q5Bwus?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe></div>
+
+        <div class="case-content-label">↓ <span class="lang-ru">ПОДКАСТ «ГДЕ ЖИТЬ?» · ТОП-5 В РОССИИ</span><span class="lang-en">"WHERE TO LIVE?" PODCAST · TOP-5 IN RUSSIA</span></div>
+        <a href="https://podcasts.apple.com/ru/podcast/где-жить/id1496934544" target="_blank" rel="noopener" class="case-podcast">
+          <div class="case-podcast-icon"></div>
+          <div class="case-podcast-body">
+            <div class="case-podcast-l">PODCAST · APPLE PODCASTS</div>
+            <div class="case-podcast-t"><span class="lang-ru">Где жить?</span><span class="lang-en">Where to Live?</span></div>
+            <div class="case-podcast-s"><span class="lang-ru">Подкаст о недвижимости. Запись, монтаж, продюсирование. Топ-5 подкастов о недвижимости в России.</span><span class="lang-en">Real estate podcast. Recording, editing, producing. Top-5 real estate podcasts in Russia.</span></div>
+          </div>
+          <div class="case-podcast-arrow">→ APPLE</div>
+        </a>
+
+        <div class="case-meta-bar">
+          <div class="case-meta-item"><div class="case-meta-l">YEARS</div><div class="case-meta-v">2018–2021</div></div>
+          <div class="case-meta-item"><div class="case-meta-l">CLIENT</div><div class="case-meta-v"><span class="lang-ru">Setl Group · Санкт-Петербург</span><span class="lang-en">Setl Group · St. Petersburg</span></div></div>
+          <div class="case-meta-item"><div class="case-meta-l">ROLE</div><div class="case-meta-v">Motion designer · Videographer</div></div>
+          <div class="case-meta-item"><div class="case-meta-l">YOUTUBE</div><div class="case-meta-v big">25K+</div><div class="case-meta-v big-sub"><span class="lang-ru">подписчиков с нуля</span><span class="lang-en">subscribers from zero</span></div></div>
+          <div class="case-meta-item"><div class="case-meta-l">PODCAST</div><div class="case-meta-v big">TOP-5</div><div class="case-meta-v big-sub"><span class="lang-ru">подкастов о недвижимости</span><span class="lang-en">real estate podcasts</span></div></div>
+        </div>
+
+        <div class="lang-ru">
+          <div class="case-content-label">↓ КОНТЕКСТ</div>
+          <p class="case-content-text">Setl Group — крупный петербургский девелопер. Маркетинговый отдел компании к 2018 году располагал классическим набором каналов — наружная реклама, ТВ, баннеры, печатные материалы, — но не имел собственного видео-производства и присутствия на YouTube. Задача состояла не в том, чтобы наполнять контентом существующие каналы, а в том, чтобы открыть для компании новый формат коммуникации.</p>
+          <div class="case-content-label">↓ ЗАДАЧА</div>
+          <p class="case-content-text">Запустить и развить корпоративный YouTube-канал с нуля, выстроить производственный процесс под видео и подкаст, параллельно отвечая за моушн-дизайн в соц. сетях, наружной рекламе и ТВ-форматах.</p>
+          <div class="case-content-label">↓ ПОДХОД</div>
+          <p class="case-content-text">Видеопроизводство как отдельная линия: съёмка и монтаж информационных выпусков об инвестициях и рынке недвижимости, продающих видео о ЖК, интервью с экспертами, корпоративных роликов. Среди регулярных форматов — обучающие серии: пятисерийный разбор ипотеки, которую массовый зритель воспринимает как закрытую тему, потребовал перевода финансовых сюжетов в нормальную человеческую речь и доступную монтажную форму. Подкаст «Где жить?» — отдельный продакшн: запись, монтаж, продюсирование.</p>
+          <div class="case-content-label">↓ РОЛЬ</div>
+          <p class="case-content-text">Motion designer и videographer. Отвечала за полный цикл видеопроизводства, моушн в соц. сетях, наружных и ТВ-форматах, запись и монтаж подкаста.</p>
+          <div class="case-content-label">↓ РЕЗУЛЬТАТ</div>
+          <p class="case-content-text">YouTube-канал с нуля до более чем 25 000 подписчиков с устойчивым удержанием приходящей аудитории. Подкаст «Где жить?», вошедший в топ-5 подкастов о недвижимости в России. Регулярное наполнение всех соц. сетей качественным контентом.</p>
+        </div>
+        <div class="lang-en">
+          <div class="case-content-label">↓ CONTEXT</div>
+          <p class="case-content-text">Setl Group is a large property developer in St. Petersburg. By 2018, the marketing department had a classic set of channels — outdoor, TV, banners, print — but no in-house video production and no YouTube presence. The assignment wasn't to fill existing channels but to open a new format of communication for the company.</p>
+          <div class="case-content-label">↓ BRIEF</div>
+          <p class="case-content-text">Launch and grow a corporate YouTube channel from zero, build an in-house production process for video and podcast, in parallel handling motion design in social, outdoor and TV formats.</p>
+          <div class="case-content-label">↓ APPROACH</div>
+          <p class="case-content-text">Video production as a separate craft line: shooting and editing informational releases on investments and the property market, sales videos on residential complexes, interviews with experts, corporate spots. Among regular formats — a five-episode breakdown of mortgages, a closed topic for mass audiences, required translating financial subjects into normal human speech and accessible editorial form. "Where to Live?" podcast — separate production: recording, editing, producing.</p>
+          <div class="case-content-label">↓ ROLE</div>
+          <p class="case-content-text">Motion designer and videographer. Responsible for the full video-production cycle, motion design in social, outdoor and TV formats, recording and editing the podcast.</p>
+          <div class="case-content-label">↓ OUTCOME</div>
+          <p class="case-content-text">YouTube channel grown from zero to over 25,000 subscribers with sustained audience retention. "Where to Live?" podcast — top-5 property-market podcasts in Russia. Regular quality content across all social channels.</p>
+        </div>
+
+        <div class="case-yellow-strip"><div>CASE 05 / 06</div><div>VIDEO & PODCAST PRODUCTION</div><div>↑ INDEX</div></div>
+      </article>
+
+      <article class="case-block" id="case-on-off">
+        <div class="case-eyebrow">2017–18 · FILM & EDITING · CASE 06 / 06</div>
+        <h2 class="case-title">On/Off studio</h2>
+        <p class="case-tag"><span class="lang-ru">Режиссура · Руководство проектами · Видеопродакшн</span><span class="lang-en">Direction · Project management · Video production</span></p>
+
+        <div class="case-content-label">↓ HERO · «СТРИМЕР» · К/М 2017 · STARCON BEST DIRECTION · TEDX</div>
+        <div class="case-hero-video"><iframe src="https://drive.google.com/file/d/1eX9LHihQm7GWFNCoDRKvXuW_dAp7H9WT/preview" allow="autoplay" loading="lazy"></iframe></div>
+
+        <blockquote class="case-quote"><span class="lang-ru">«Ближайшее будущее, в котором богатые арендуют тела бедных для симуляций — чтобы получать свежие ощущения и реальные эмоции, не тратя на это ресурсы собственного тела».</span><span class="lang-en">"A near future where the rich rent the bodies of the poor for simulations — to receive fresh sensations and real emotions without spending the resources of their own."</span></blockquote>
+
+        <p class="case-content-text"><span class="lang-ru">Короткометражный научно-фантастический фильм. Режиссура, со-сценарий. Картина прошла в выборку кейсов TEDx и команда фильма дала интервью в рамках программы. Приз за лучшую режиссуру фестиваля «Старкон», 2017.</span><span class="lang-en">Short science fiction film. Direction, co-script. The film was selected for the TEDx case showcase. Best Direction prize at the Starcon festival, 2017.</span></p>
+
+        <div class="case-sub-label">↓ STEREOLETO & ZVUKOHOD · <span class="lang-ru">ДОКУМЕНТАЛЬНОЕ ИНТЕРВЬЮ</span><span class="lang-en">DOCUMENTARY INTERVIEW</span></div>
+        <p class="case-sub-text"><span class="lang-ru">Документальная работа на музыкальном фестивале Stereoleto: интервью с командой звукоинженеров Zvukohod о технической изнанке фестиваля. Режиссура, операторская работа, монтаж. Съёмка фестиваля и съёмка с коптера.</span><span class="lang-en">Documentary work at the Stereoleto music festival: interview with the Zvukohod sound engineering team. Direction, camera, editing. Festival shooting and aerial.</span></p>
+        <div class="case-grid"><div class="case-tile case-tile-16-9"><iframe src="https://drive.google.com/file/d/1STmCH1ChLVoi8tq_QxCNoDC0xp8ltF3M/preview" allow="autoplay" loading="lazy"></iframe></div></div>
+
+        <div class="case-sub-label">↓ ALPENHOUSE × TESTED WORKS · <span class="lang-ru">ПРОМО ДЛЯ СТАРТАПА</span><span class="lang-en">STARTUP PROMO</span></div>
+        <p class="case-sub-text"><span class="lang-ru">Промо-ролик для технологического стартапа Tested Works: программа, распределяющая нагрузку между официантами при пиковых заказах. Кейс снимался в петербургском ресторане Alpenhouse в дни Чемпионата мира по футболу — на реальной запредельной загрузке.</span><span class="lang-en">Promo for the Tested Works tech startup: software for distributing waiter workload at peak orders. Filmed at the Alpenhouse restaurant during the World Cup.</span></p>
+        <div class="case-grid"><div class="case-tile case-tile-16-9"><iframe src="https://drive.google.com/file/d/1KvpEneccCgNQha1r6FJcCPA5UlhdMX8b/preview" allow="autoplay" loading="lazy"></iframe></div></div>
+
+        <div class="case-sub-label">↓ GARDIE MUSIC · <span class="lang-ru">МУЗЫКАЛЬНЫЕ КЛИПЫ</span><span class="lang-en">MUSIC VIDEOS</span></div>
+        <p class="case-sub-text"><span class="lang-ru">Серия музыкальных клипов для исполнительницы Леры Гард. Режиссура, операторская работа, монтаж, цветокоррекция.</span><span class="lang-en">A series of music videos for Lera Gard. Direction, camera, editing, color grading.</span></p>
+        <div class="case-grid case-grid-3">
+          <div class="case-tile case-tile-16-9"><iframe src="https://www.youtube-nocookie.com/embed/v8i25gDDUAA?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe></div>
+          <div class="case-tile case-tile-16-9"><iframe src="https://www.youtube-nocookie.com/embed/t7ha8Gd2CUY?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe></div>
+          <div class="case-tile case-tile-16-9"><iframe src="https://www.youtube-nocookie.com/embed/S4vb2Ay8VNc?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe></div>
+        </div>
+
+        <div class="case-meta-bar">
+          <div class="case-meta-item"><div class="case-meta-l">YEARS</div><div class="case-meta-v">2017–2018</div></div>
+          <div class="case-meta-item"><div class="case-meta-l">STUDIO</div><div class="case-meta-v"><span class="lang-ru">On/Off studio · СПб</span><span class="lang-en">On/Off studio · SPb</span></div></div>
+          <div class="case-meta-item"><div class="case-meta-l">ROLE</div><div class="case-meta-v"><span class="lang-ru">Режиссёр · Руководитель проектов</span><span class="lang-en">Director · Project lead</span></div></div>
+          <div class="case-meta-item"><div class="case-meta-l">GENRES</div><div class="case-meta-v"><span class="lang-ru">К/М · Документальный · Промо · Клип</span><span class="lang-en">Short · Doc · Promo · Music video</span></div></div>
+          <div class="case-meta-item"><div class="case-meta-l">FESTIVALS</div><div class="case-meta-v">Старкон · TEDx</div></div>
+          <div class="case-meta-item"><div class="case-meta-l">PRODUCTION</div><div class="case-meta-v">Camera · Aerial · Premiere · AE · DaVinci</div></div>
+        </div>
+
+        <div class="lang-ru">
+          <div class="case-content-label">↓ КОНТЕКСТ</div>
+          <p class="case-content-text">Видеопродакшн On/Off studio в Санкт-Петербурге. Я пришла в студию режиссёром и руководителем проектов: моей зоной ответственности были и художественные решения по конкретным работам, и общее ведение проекта от первого разговора с заказчиком до финальной сдачи. За два года работы — четыре характерные линии: режиссёрский короткий метр, документальное интервью, рекламный промо для технологического стартапа, серия музыкальных клипов.</p>
+          <div class="case-content-label">↓ ПОДХОД</div>
+          <p class="case-content-text">Каждая из четырёх линий требует своего жанрового языка. «Стример» — научная фантастика в коротком метре, плотная режиссёрская работа с актёрами и кадром. Stereoleto — документальное интервью, в котором сила в выборе кадра, а не в постановке. Alpenhouse — рекламный промо в реальных производственных условиях запредельной загрузки. Gardie — музыкальные клипы с упором на цвет и пластику. Общее во всех четырёх — режиссёрская позиция и личное участие в съёмке.</p>
+          <div class="case-content-label">↓ РОЛЬ</div>
+          <p class="case-content-text">Режиссёр и руководитель проектов. Полный цикл от концепта и сценария до финальной сдачи. Операторская работа, монтаж и цветокоррекция в части проектов. Съёмка с коптера в документальных и промо-форматах.</p>
+          <div class="case-content-label">↓ РЕЗУЛЬТАТ</div>
+          <p class="case-content-text">Самостоятельная режиссёрская работа в четырёх жанровых направлениях за два года. «Стример» — приз за лучшую режиссуру фестиваля «Старкон», выборка кейсов TEDx.</p>
+        </div>
+        <div class="lang-en">
+          <div class="case-content-label">↓ CONTEXT</div>
+          <p class="case-content-text">Video production at On/Off studio, St. Petersburg. I came in as director and project manager: the zone of responsibility covered both artistic decisions on specific works and overall project management from the first conversation with the client through to final delivery. Over two years — four characteristic lines: directed short film, documentary interview, branded promo for a tech startup, music video series.</p>
+          <div class="case-content-label">↓ APPROACH</div>
+          <p class="case-content-text">Each of the four lines demanded its own genre language. "Streamer" — science fiction in short form, dense directorial work with actors and frame. Stereoleto — documentary interview, where the strength is in the choice of shot rather than staging. Alpenhouse — branded promo in real production conditions of peak load. Gardie — music videos with emphasis on colour and physicality. Common to all four: directorial position and personal participation in the shoot — camera in hand, not just storyboard markup.</p>
+          <div class="case-content-label">↓ ROLE</div>
+          <p class="case-content-text">Director and project lead. Full cycle from concept and scripting to final delivery. Camera, editing and colour grading on some projects. Aerial work in documentary and promo formats.</p>
+          <div class="case-content-label">↓ OUTCOME</div>
+          <p class="case-content-text">Self-contained directorial work across four genre lines over two years. "Streamer" — Best Direction prize at the Starcon festival, TEDx case showcase selection.</p>
+        </div>
+
+        <div class="case-yellow-strip"><div>CASE 06 / 06</div><div>FOUR GENRES — SHORT FILM, DOC, PROMO, MUSIC VIDEO</div><div>↑ INDEX</div></div>
+      </article>
+
+    </section>
+
+    <section id="expertise">
+      <h2 class="section-title">Expertise</h2>
+      <p class="section-sub"><span class="lang-ru">Три плана работы: смысл, генерация, продакшн</span><span class="lang-en">Three layers: meaning, generation, production</span></p>
+
+      <div class="pillar">
+        <div class="pillar-head"><div class="pillar-num">01</div><div class="pillar-title">Direction</div></div>
+        <div class="pillar-body"><span class="lang-ru">Часть работы, в которой принимаются решения о смысле и форме проекта: что он должен сказать, какой визуальный язык для этого нужен, как устроен процесс, который этого языка достигает.</span><span class="lang-en">The layer of work where decisions about meaning and form are made: what the project needs to say, what visual language carries that, how the process is structured.</span></div>
+        <div class="pillar-stack"><strong><span class="lang-ru">Креативная стратегия</span><span class="lang-en">Creative strategy</span></strong> · <strong><span class="lang-ru">Руководство процессом</span><span class="lang-en">Process leadership</span></strong> · <strong><span class="lang-ru">Презентации и приёмка</span><span class="lang-en">Pitches and approvals</span></strong></div>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-head"><div class="pillar-num">02</div><div class="pillar-title">Generative & Prompt</div></div>
+        <div class="pillar-body"><span class="lang-ru">Работа с генеративными моделями как с частью производственного пайплайна. Промпт-инженерия, воспроизводимые библиотеки промптов, тренировка LoRA, локальная инфраструктура.</span><span class="lang-en">Working with generative models as part of a production pipeline. Prompt engineering, reproducible prompt libraries, LoRA training, local infrastructure.</span></div>
+        <div class="pillar-stack"><strong>LLM:</strong> Claude · GPT · Gemini<br><strong>Image:</strong> Midjourney · Flux · Stable Diffusion + ComfyUI · Nano Banana<br><strong>Video:</strong> Veo 3 · Sora 2 · Runway · KLING · Luma · Vidu · Hailuo<br><strong>Audio:</strong> Suno · ElevenLabs &nbsp;·&nbsp; <strong>UGC:</strong> HeyGen · arcads.ai</div>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-head"><div class="pillar-num">03</div><div class="pillar-title">Motion & Real-time</div></div>
+        <div class="pillar-body"><span class="lang-ru">Продакшн-часть работы: моушн-дизайн, 3D, композитинг, real-time визуальные системы. Двенадцатый год работаю в этом ремесле.</span><span class="lang-en">The production side: motion design, 3D, compositing, real-time visual systems. Twelfth year in this craft.</span></div>
+        <div class="pillar-stack"><strong>After Effects</strong><span class="lang-ru"> — 2D-моушн, композ, плагины, частицы, Duik, VFX</span><span class="lang-en"> — 2D motion, compositing, plugins, particles, Duik, VFX</span><br><strong>3D</strong> — Cinema 4D + Redshift, Substance Painter; Houdini · Blender<br><strong>TouchDesigner</strong><span class="lang-ru"> — real-time системы для инсталляций</span><span class="lang-en"> — real-time systems for installations</span><br><strong>Unreal Engine 5</strong> — Niagara · Mixamo<br><strong>Spine · DaVinci Resolve · Premiere Pro · Insta360</strong></div>
+      </div>
+    </section>
+
+    <section id="process">
+      <h2 class="section-title">Process</h2>
+      <p class="section-sub"><span class="lang-ru">Три заметки о методе</span><span class="lang-en">Three working notes</span></p>
+
+      <div class="note">
+        <div class="note-num">№ 01 · <span class="lang-ru">ВЕДЕНИЕ ПРОЕКТА</span><span class="lang-en">PROJECT LEADING</span></div>
+        <h3 class="note-title"><span class="lang-ru">Ведение проекта</span><span class="lang-en">Project leading</span></h3>
+        <div class="note-body lang-ru">
+          <p>Бриф редко описывает задачу. Он описывает продукт — ролик, пост, презентация — а задача лежит раньше: чего заказчик хочет добиться и по каким признакам поймёт, что получилось. Первая стадия моих проектов — разговор, в котором эти признаки формулируются вслух.</p>
+          <p>Дальше — разбор материала. Я смотрю, что в нём уже есть как изобразительная и драматургическая основа: какой свет, какой ритм, какая интонация заложены в продукте, в герое, в среде. Часть визуального решения уже содержится в самом материале, и работа состоит в том, чтобы её увидеть, а не придумать поверх.</p>
+          <p>До первой отрисовки — одностраничный проектный документ: задача, решение, ограничения, критерий приёмки. Я возвращаюсь к нему на черновом монтаже, перед цветом и перед сдачей. На длинных проектах решения накапливают дрейф, и сверка с документом — единственный способ его поймать.</p>
+          <p>Правки прохожу в один-два круга. Третий круг чаще всего возникает не из содержания, а из желания показать материал ещё одному человеку; я возвращаю разговор к проектному документу. Если правка выходит за него — это новый проект, и его нужно оформлять отдельно.</p>
+        </div>
+        <div class="note-body lang-en">
+          <p>The brief describes the task. It tells me about the product, the role, the format — but the real task lies deeper: where the client wants to arrive and by what signals we'll know we've arrived. The first stage of any project is reconstruction — a conversation where those expectations get articulated out loud.</p>
+          <p>Then — the material. I notice what's already there as visual and dramaturgical raw material: which light, which rhythm, what intonation is laid down in the product, in the genre, in the medium. The visual decision is born out of the material itself.</p>
+          <p>Before the first sketch — a one-page project document: task, decision, constraints, success criteria. I come back to it on every transition. On longer projects this document acts as the anchor.</p>
+          <p>Edits run in one or two rounds. A third round usually signals not doubt but a desire to point the material somewhere else; I return to the project document. If a new direction emerges — it's a new project, framed separately.</p>
+        </div>
+      </div>
+
+      <div class="note">
+        <div class="note-num">№ 02 · <span class="lang-ru">БРИФЫ И ПРЕЗЕНТАЦИИ</span><span class="lang-en">BRIEFS AND PITCHES</span></div>
+        <h3 class="note-title"><span class="lang-ru">Брифы и презентации</span><span class="lang-en">Briefs and pitches</span></h3>
+        <div class="note-body lang-ru">
+          <p>В рекламе работа часто строится от пэкшота — финального кадра с продуктом и сообщением, ради которого снято всё остальное. Если пэкшот зафиксирован, сценарий разворачивается обратным ходом. В других жанрах — документальном, режиссёрском, обучающем — точка отсчёта другая: герой, материал, предложенные обстоятельства.</p>
+          <p>Раскадровка — основной рабочий документ этой фазы. Каждый ключевой кадр отрисован или собран из точных референсов: композиция, свет, ракурс, тип плана.</p>
+          <p>Презентация заказчика — защита раскадровки. Первый разворот: ключевой кадр и одно предложение, объясняющее, почему именно такое решение работает на задачу. Отдельный разворот — риски: что в идее может не сработать и при каких условиях.</p>
+          <p>Бриф для команды — та же раскадровка плюс технический слой: распределение ролей, сроки, визуальный словарь. Палитра, типографика, тип движения камеры, темп монтажа.</p>
+        </div>
+        <div class="note-body lang-en">
+          <p>In the ad genre, work usually starts from the pitch — a final card with product and message that's then known across the run. If the pitch goes through, the scenario unfolds at the established pace. In other genres — documentary, directorial, commissioned — the work of the others.</p>
+          <p>Storyboard is the working document at this stage. Each keyframe drawn or assembled from technical references: composition, light, focus, type of plan.</p>
+          <p>Presentation to the customer — picking up the storyboard. First take: keyframe and one explanation of why this decision works on the task. A separate take — risks: what in the idea might not work and under which conditions.</p>
+          <p>Brief for the team — a same kind of fast technical sheet: distribution of roles, deadlines, visual reference. Palette, typography, type of camera motion, pace of the edit.</p>
+        </div>
+      </div>
+
+      <div class="note">
+        <div class="note-num">№ 03 · <span class="lang-ru">РАБОТА С ЧУЖИМ МАТЕРИАЛОМ</span><span class="lang-en">WORKING WITH OTHERS' MATERIAL</span></div>
+        <h3 class="note-title"><span class="lang-ru">Работа с чужим материалом</span><span class="lang-en">Working with others' material</span></h3>
+        <div class="note-body lang-ru">
+          <p>Чужой материал бывает трёх видов: заказной (бриф и референсы от клиента), производственный (футаж, ассеты, сырьё), редакционный (чужой текст).</p>
+          <p>С заказным материалом первая работа — реконструкция замысла. Заказчик видит результат, но описать его словами получается редко: бриф приходит вместе с референсами, и эти референсы не всегда совпадают с тем, что в нём написано. Я разбираю их по признакам — цвет, композиция, ритм, тон — и возвращаюсь к заказчику с вопросом по реакции.</p>
+          <p>С производственным материалом — футажом, ассетами, сырьём — работа начинается не с монтажа, а с инвентаризации: какая форма в этом материале возможна, а какая — нет. Отдельный слой здесь — арт от художников. В композиции уже заложены акцент, направление взгляда, ритм; анимация должна усилить эту логику, а не лечь поверх неё.</p>
+          <p>С редакционным материалом — чужим текстом — работает другая дисциплина. Я читаю текст трижды: как читатель, корректор, дизайнер. Вёрстка начинается после третьего чтения.</p>
+          <p>В работе с любым чужим материалом свой голос добавляется в последнюю очередь.</p>
+        </div>
+        <div class="note-body lang-en">
+          <p>Someone else's material comes in three kinds: an assignment (brief and references from the client), produced material (footage, assets, audio), an editorial commission (someone else's text).</p>
+          <p>With assignment material the first job is reading intent. The client sees the result, but in their language it sounds different: brief comes with references, and those references don't always coincide with what's described in words. I take them apart by attribute — colour, composition, rhythm, pacing — and from there return to the briefing with a question about reaction.</p>
+          <p>With produced material — footage, assets, audio — work begins not with editing but with inventory: which form is already laid down in this material, which isn't. A separate slice of the job — frames from cinematographers. In composition, alignments are already given, lighting decision, pace; animation has to hear that logic.</p>
+          <p>With editorial commissions — someone else's text — the work is a different discipline. I read the text three times: as reader, as proofreader, as designer. The picture turns up after the third reading.</p>
+          <p>In work with anyone else's material my voice arrives in the following turn.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="writing">
+      <h2 class="section-title">Writing</h2>
+      <p class="section-sub"><span class="lang-ru">Кинокритика, литературные заметки, эссе об искусстве и играх</span><span class="lang-en">Film criticism, literary notes, essays on art and games</span></p>
+
+      <div class="writing-featured">
+        <div class="writing-featured-meta"><span class="lang-ru">«ИСКУССТВО КИНО» · 2022 · СО-АВТОР</span><span class="lang-en">ISKUSSTVO KINO · 2022 · CO-AUTHOR</span></div>
+        <div class="writing-featured-title"><span class="lang-ru">Краткая история корейского кино: от Арирана до Паразитов</span><span class="lang-en">A Brief History of Korean Cinema: From Arirang to Parasite</span></div>
+        <div class="writing-featured-text"><span class="lang-ru">Большой редакционный материал в формате карточек: век корейского кинематографа в одном тексте — от золотого века немого кино до фестивальных побед XXI века.</span><span class="lang-en">A long-form editorial in card format: a century of Korean cinema in one text.</span></div>
+        <a href="https://kinoart.ru/cards/kratkaya-istoriya-koreyskogo-kino-ot-arirana-do-parazitov" target="_blank" rel="noopener" class="writing-link">→ kinoart.ru</a>
+      </div>
+
+      <div class="writing-item">
+        <div class="writing-item-head"><div class="writing-item-title">Pale Fire</div><div class="writing-item-platform">TELETYPE</div></div>
+        <div class="writing-item-tag"><span class="lang-ru">Литературоведческая заметка о «Бледном огне» Набокова</span><span class="lang-en">A literary note on Nabokov's Pale Fire</span></div>
+        <div class="writing-item-text"><span class="lang-ru">Заметка по нити одного образа из набоковского комментария: родители Джона Шейда — орнитологи. Через них — к Бэрду, Одюбону, Эбботу, к рецензии Набокова на Одюбона в Times.</span><span class="lang-en">A note tracing a single image from Nabokov's commentary: John Shade's parents were ornithologists.</span></div>
+        <a href="https://teletype.in/@whimstation/pale_fire" target="_blank" rel="noopener" class="writing-link">→ teletype.in/@whimstation/pale_fire</a>
+      </div>
+
+      <div class="writing-item">
+        <div class="writing-item-head"><div class="writing-item-title"><span class="lang-ru">«Невидимый бой» Райнера Сарнета</span><span class="lang-en">Invisible Fight by Rainer Sarnet</span></div><div class="writing-item-platform">@BLUENOISEE</div></div>
+        <div class="writing-item-tag"><span class="lang-ru">Развёрнутая критика эстонского кино — кунг-фу, монахи и Black Sabbath</span><span class="lang-en">Long-form criticism of Estonian cinema</span></div>
+        <div class="writing-item-text"><span class="lang-ru">Эссе о фильме Райнера Сарнета: лубочная религиозность советского десятилетия, сказочный гайд по поиску национальной идентичности, кадры Марта Таниэля.</span><span class="lang-en">An essay on Rainer Sarnet's film: folkloric religiosity of the Soviet decade, frames by Mart Taniel.</span></div>
+        <a href="https://t.me/bluenoisee/261" target="_blank" rel="noopener" class="writing-link">→ t.me/bluenoisee/261</a>
+      </div>
+
+      <div class="writing-item" style="border-top:.5px solid var(--border)">
+        <div class="section-label" style="border-top:0;padding-top:0">↓ <span class="lang-ru">SHORT NOTES · ИЗБРАННОЕ</span><span class="lang-en">SHORT NOTES · SELECTED</span></div>
+        <div class="short-notes">
+          <div class="short-note"><div class="short-note-cat"><span class="lang-ru">КИНО</span><span class="lang-en">FILM</span></div><div class="short-note-title"><span class="lang-ru">«Падения» Питера Гринуэя</span><span class="lang-en">The Falls by Peter Greenaway</span></div><div class="short-note-text"><span class="lang-ru">Мокьюментари о 92 жертвах загадочного ЗОВа.</span><span class="lang-en">A mockumentary on 92 victims of a mysterious CALL.</span></div></div>
+          <div class="short-note"><div class="short-note-cat"><span class="lang-ru">ИГРЫ</span><span class="lang-en">GAMES</span></div><div class="short-note-title">BABBDI</div><div class="short-note-text"><span class="lang-ru">Малютка-игра в брутальном городе бетонных блоков.</span><span class="lang-en">A small game in a brutalist city of concrete blocks.</span></div></div>
+          <div class="short-note"><div class="short-note-cat"><span class="lang-ru">ИСКУССТВО</span><span class="lang-en">ART</span></div><div class="short-note-title"><span class="lang-ru">Джон Пол Джонс</span><span class="lang-en">John Paul Jones</span></div><div class="short-note-text"><span class="lang-ru">Художник-гравёр (1924–1999), не модный современник, переживший Окинаву.</span><span class="lang-en">Painter and engraver (1924–1999).</span></div></div>
+        </div>
+        <p style="margin-top:18px"><a href="https://t.me/bluenoisee" target="_blank" rel="noopener" class="writing-link"><span class="lang-ru">→ Все заметки в канале t.me/bluenoisee</span><span class="lang-en">→ All notes at t.me/bluenoisee</span></a></p>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">Art Director</h2>
+      <p class="section-sub"><span class="lang-ru">Режиссура мультимедиа, моушн-дизайн, генеративные системы</span><span class="lang-en">Multimedia direction, motion design, generative systems</span></p>
+      <blockquote class="about-quote"><span class="lang-ru">«Проектирую визуальные системы на стыке режиссуры, нейросетей и real-time-графики».</span><span class="lang-en">"Designing visual systems at the intersection of direction, neural networks and real-time graphics."</span></blockquote>
+
+      <p class="about-text lang-ru">Наталия Терещенко, арт-директор в области генеративных медиа. Более одиннадцати лет работаю в визуальных индустриях: режиссура, монтаж, моушн-дизайн, VFX, промпт-инженерия. Образование: режиссура мультимедиа программ (СПбГУП, 2017), киножурналистика (ШИКИ, 2022), VFX-подготовка (VFX LAB, 2023). Короткометражный фильм «Стример» — приз за режиссуру фестиваля «Старкон», 2017.</p>
+      <p class="about-text lang-ru">Веду проекты от брифа до приёмки. Руковожу процессом в небольших группах, работаю внутри больших команд — в том числе в пайплайне международной студии. Выстраиваю пайплайн с нуля там, где его нет, провожу пресейл-презентации, работаю с креативными продюсерами, структурирую задачи, держу процессы в проектах с меняющимся брифом. В Setl Group развила корпоративный YouTube с нуля до более чем 25 000 подписчиков, запустила подкаст, вошедший в топ-5 рубрики.</p>
+      <p class="about-text lang-ru">С нейросетями работаю системно. Выстраиваю пайплайны генерации под эстетику продукта, тренирую модели под запрос, разворачиваю локальные серверы, пишу воспроизводимые промпты.</p>
+      <p class="about-text lang-ru">Основной исследовательский фокус — режиссура мультимедиа и геймдизайн с использованием генеративных инструментов: разработка сценарных структур через нейросети, построение визуального мира игры в смешанном пайплайне, проектирование real-time визуальных систем в TouchDesigner и Unreal Engine для инсталляционных и выставочных форматов.</p>
+      <p class="about-text lang-ru">Открыта к арт-директорским и режиссёрским ролям в киностудиях, продакшнах, музеях и галереях; к проектам с кураторами и издательствами; к работе в области обучающих платформ и AI-продуктов.</p>
+
+      <p class="about-text lang-en">Natalia Tereshchenko, art director in generative media. Over eleven years in visual industries: direction, editing, motion design, VFX, prompt engineering. Education: multimedia direction (SPbGUP, 2017), film journalism (SHIKI, 2022), VFX (VFX LAB, 2023). Short film "Streamer" — Best Direction at Starcon, 2017.</p>
+      <p class="about-text lang-en">I run projects from brief to delivery. I lead processes in small groups and work within larger teams. At Setl Group I grew a corporate YouTube from zero to over 25,000 subscribers and launched a podcast that reached top-5 in its category.</p>
+      <p class="about-text lang-en">I work with neural networks systematically. I build generation pipelines aligned with product aesthetics, train models for specific requirements, deploy local servers, write reproducible prompts.</p>
+      <p class="about-text lang-en">Main research focus — multimedia direction and game design with generative tools, real-time visual systems in TouchDesigner and Unreal Engine for installations and exhibitions.</p>
+      <p class="about-text lang-en">Open to art director and director roles in film studios, production houses, museums and galleries; projects with curators and publishers; work in EdTech platforms and AI products.</p>
+
+      <div class="section-label" style="margin-top:32px">↓ BACKGROUND</div>
+      <div class="background-row"><div class="background-year">2024→</div><div>SlowDive · Prompt motion direction</div></div>
+      <div class="background-row"><div class="background-year">2023→</div><div>Recent work / Freelance</div></div>
+      <div class="background-row"><div class="background-year">2022–23</div><div>G5 Games · Motion design</div></div>
+      <div class="background-row"><div class="background-year">2022</div><div><span class="lang-ru">«Искусство кино» · Редакционный дизайн</span><span class="lang-en">Iskusstvo Kino · Editorial design</span></div></div>
+      <div class="background-row"><div class="background-year">2018–21</div><div>Setl Group · Motion, video, podcast production</div></div>
+      <div class="background-row"><div class="background-year">2017–18</div><div>On/Off studio<span class="lang-ru"> · Видеодизайн, режиссура</span><span class="lang-en"> · Video design, direction</span></div></div>
+      <div class="background-row"><div class="background-year">2013→</div><div>Practice · Motion, video, editing</div></div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-sub"><span class="lang-ru">Прямые каналы связи и текущий фокус поиска</span><span class="lang-en">Direct contact channels and current focus</span></p>
+      <blockquote class="about-quote"><span class="lang-ru">«Арт-директор, режиссёр мультимедиа, motion lead, prompt director, AI-продюсер визуального контента. В киностудиях, продакшнах, музеях, галереях, издательствах; на обучающих платформах и в AI-продуктах».</span><span class="lang-en">"Art director, multimedia director, motion lead, prompt director, AI producer of visual content."</span></blockquote>
+
+      <div class="contact-cards">
+        <a href="mailto:natashamanina@gmail.com" class="contact-card"><div class="contact-card-label">EMAIL</div><div class="contact-card-val">natashamanina@gmail.com</div><div class="contact-card-tag">PREFERRED</div></a>
+        <a href="https://t.me/whimberry" target="_blank" rel="noopener" class="contact-card"><div class="contact-card-label">TELEGRAM</div><div class="contact-card-val">@whimberry</div><div class="contact-card-tag">FAST REPLY</div></a>
+        <a href="tel:+79117543260" class="contact-card"><div class="contact-card-label">PHONE</div><div class="contact-card-val">+7 (911) 754-32-60</div><div class="contact-card-tag">BY APPOINTMENT</div></a>
+        <a href="#" class="contact-card"><div class="contact-card-label">CV</div><div class="contact-card-val"><a href="assets/cv.pdf" download>→ Download PDF</a></div><div class="contact-card-tag">RU / EN</div></a>
+      </div>
+
+      <div class="section-label">↓ FORMAT OF ENGAGEMENT</div>
+      <div class="format-row"><div class="format-name">Full-time</div><div class="format-desc"><span class="lang-ru">Арт-директорские и режиссёрские позиции</span><span class="lang-en">Art director and director positions</span></div></div>
+      <div class="format-row"><div class="format-name">Project-based</div><div class="format-desc"><span class="lang-ru">Отдельные проекты и кампании, включая международные</span><span class="lang-en">Standalone projects and campaigns</span></div></div>
+      <div class="format-row"><div class="format-name">Consulting</div><div class="format-desc"><span class="lang-ru">Сборка промптовых пайплайнов и визуальных систем</span><span class="lang-en">Building prompt pipelines and visual systems</span></div></div>
+      <div class="format-row"><div class="format-name">Collaboration</div><div class="format-desc"><span class="lang-ru">Кураторские, музейные, выставочные и издательские проекты</span><span class="lang-en">Curatorial, museum, exhibition and publishing projects</span></div></div>
+    </section>
+
+    <section id="practice">
+      <h2 class="section-title">Practice & Credits</h2>
+      <p class="section-sub"><span class="lang-ru">Десять лет режиссёрско-монтажной практики и фестивальные кредиты</span><span class="lang-en">Ten years of directorial and editing practice plus festival credits</span></p>
+
+      <div class="section-label" style="border-top:0;padding-top:0">↓ PRACTICE · 2013 →</div>
+      <div class="practice-table">
+        <div class="practice-cat"><span class="lang-ru">ТЕАТР</span><span class="lang-en">THEATRE</span></div>
+        <div class="practice-cell"><strong><span class="lang-ru">Запись и монтаж театральных постановок</span><span class="lang-en">Recording and editing of theatrical productions</span></strong><div class="practice-cell-sub"><span class="lang-ru">Около десяти съёмок драматических и кукольных спектаклей разных режиссёров; актёрские визитки. Многокамерная съёмка, монтаж, цветокоррекция.</span><span class="lang-en">Around ten recordings of drama and puppet plays; actor reels. Multi-camera shooting, editing, color grading.</span></div></div>
+
+        <div class="practice-cat"><span class="lang-ru">ТВ-НОВОСТИ</span><span class="lang-en">TV NEWS</span></div>
+        <div class="practice-cell"><strong><span class="lang-ru">Телеканал «Медиа-Квартал» · 2013</span><span class="lang-en">Media-Quartal TV channel · 2013</span></strong><div class="practice-cell-sub"><span class="lang-ru">Монтаж новостных сюжетов.</span><span class="lang-en">Editing news segments.</span></div></div>
+
+        <div class="practice-cat"><span class="lang-ru">ОБРАЗОВАНИЕ</span><span class="lang-en">EDUCATION</span></div>
+        <div class="practice-cell"><strong><span class="lang-ru">Бизнес-школа AMI · курс лекций</span><span class="lang-en">AMI Business School · lecture series</span></strong><div class="practice-cell-sub"><span class="lang-ru">Съёмка и монтаж лекционного цикла.</span><span class="lang-en">Filming and editing of a lecture series.</span></div><div style="margin-top:8px"><strong><span class="lang-ru">Бизнес-завтраки</span><span class="lang-en">Business breakfasts</span></strong><div class="practice-cell-sub"><span class="lang-ru">Съёмка и монтаж событий деловой повестки.</span><span class="lang-en">Filming and editing of business events.</span></div></div></div>
+
+        <div class="practice-cat"><span class="lang-ru">АУДИО</span><span class="lang-en">AUDIO</span></div>
+        <div class="practice-cell"><strong><span class="lang-ru">Подкаст «Такое решение»</span><span class="lang-en">"Takoe Reshenie" Podcast</span></strong><div class="practice-cell-sub"><span class="lang-ru">Подкаст-исследование про города и культуру в них. Создание подкаста — продюсирование, запись, монтаж.</span><span class="lang-en">A research podcast on cities and the cultures within them.</span></div></div>
+
+        <div class="practice-cat"><span class="lang-ru">АНИМАЦИИ</span><span class="lang-en">ANIMATIONS</span></div>
+        <div class="practice-cell"><strong><span class="lang-ru">Авторские моушн-работы и VFX-эксперименты в Unreal Engine</span><span class="lang-en">Personal motion work and VFX experiments in Unreal Engine</span></strong><div class="practice-cell-sub"><a href="https://drive.google.com/file/d/1X72z0H8kQ-6Usq_EHw57O4pwWtXCntGZ/view" target="_blank" rel="noopener" class="writing-link">→ drive.google.com</a></div></div>
+
+        <div class="practice-cat"><span class="lang-ru">РАННИЕ РАБОТЫ</span><span class="lang-en">EARLY WORK</span></div>
+        <div class="practice-cell"><strong>RNB2015 · 2015</strong><div class="practice-cell-sub"><span class="lang-ru">Авторский проект: текст, режиссура, монтаж.</span><span class="lang-en">Personal project: text, direction, editing.</span></div></div>
+      </div>
+
+      <div class="section-label">↓ FESTIVALS & CREDITS</div>
+
+      <div class="practice-cat" style="margin-bottom:12px;border-top:0;padding-top:0">→ DIRECTOR / CO-DIRECTOR</div>
+      <div class="fest-table" style="margin-bottom:24px">
+        <div class="fest-year">2017</div>
+        <div class="fest-cell"><strong><span class="lang-ru">«Стример»</span><span class="lang-en">"Streamer"</span></strong> <span style="color:var(--text-secondary)">· <span class="lang-ru">короткий метр, 5 мин · режиссура, со-сценарий</span><span class="lang-en">short film, 5 min · direction, co-script</span></span><div class="practice-cell-sub"><span class="lang-ru">Best Direction · фестиваль «Старкон» · case selection · TEDx</span><span class="lang-en">Best Direction · Starcon festival · case selection · TEDx</span></div></div>
+
+        <div class="fest-year">2025</div>
+        <div class="fest-cell"><strong>HOG Leningrad Chapter</strong> <span style="color:var(--text-secondary)">· <span class="lang-ru">короткий метр про Африку · режиссура, монтаж</span><span class="lang-en">short film about Africa · direction, editing</span></span><div class="practice-cell-sub"><a href="https://vk.com/wall323469738_1633" target="_blank" rel="noopener" class="writing-link">→ vk.com/wall323469738_1633</a></div></div>
+
+        <div class="fest-year">2023</div>
+        <div class="fest-cell"><strong><span class="lang-ru">Документальный фильм-путешествие</span><span class="lang-en">Documentary travel film</span></strong> <span style="color:var(--text-secondary)">· <span class="lang-ru">Мурманск · режиссура</span><span class="lang-en">Murmansk · direction</span></span><div class="practice-cell-sub"><a href="https://youtube.com/watch?v=I5iwMWRCfoU" target="_blank" rel="noopener" class="writing-link">→ youtube.com/watch?v=I5iwMWRCfoU</a></div></div>
+      </div>
+
+      <div class="practice-cat" style="margin-bottom:12px;border-top:0;padding-top:0">→ TEAM CREDITS</div>
+      <div class="fest-table">
+        <div class="fest-year">—</div>
+        <div class="fest-cell"><strong><span class="lang-ru">«Не в форме»</span><span class="lang-en">"Ne v Forme"</span></strong> <span style="color:var(--text-secondary)">· <span class="lang-ru">режиссёр Егор Чичканов · съёмка бэкстейджа</span><span class="lang-en">director Egor Chichkanov · backstage filming</span></span></div>
+
+        <div class="fest-year">—</div>
+        <div class="fest-cell"><strong><span class="lang-ru">«Дай мне ритм!»</span><span class="lang-en">"Give Me Rhythm!"</span></strong> <span style="color:var(--text-secondary)">· <span class="lang-ru">режиссёр Дарья Гушан · анимация титров</span><span class="lang-en">director Daria Gushan · title animation</span></span></div>
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="meta-col" id="metaCol">
+    <div class="meta-label">CONTACT</div>
+    <div class="meta-val">natashamanina@gmail.com<br>@whimberry · Telegram</div>
+    <div class="meta-label">LANGUAGES</div>
+    <div class="meta-val"><span class="lang-ru">Русский — родной<br>English — B2</span><span class="lang-en">Russian — native<br>English — B2</span></div>
+    <div class="meta-label">YEARS IN VISUAL</div>
+    <div class="meta-val">11+</div>
+    <div class="meta-label">CV</div>
+    <div class="meta-val"><a href="assets/cv.pdf" download>→ Download PDF</a></div>
+    <div class="meta-label">START HERE</div>
+    <div class="meta-val">→ Work<br>→ Writing<br>→ About</div>
+  </aside>
+
+</div>
+
+<footer class="ticker">
+  <div>NOW IN PRODUCTION</div>
+  <div class="ticker-center">GAMEDEV × AI · EDITORIAL FILM ESSAY</div>
+  <div>↑ TOP</div>
+</footer>
+
+<script>
+(function(){
+  var savedTheme=localStorage.getItem('nt-theme')||'light';
+  document.documentElement.classList.toggle('dark',savedTheme==='dark');
+  document.getElementById('themeToggle').addEventListener('click',function(){
+    var isDark=document.documentElement.classList.toggle('dark');
+    localStorage.setItem('nt-theme',isDark?'dark':'light');
+  });
+
+  var savedLang=localStorage.getItem('nt-lang')||'ru';
+  document.documentElement.setAttribute('lang',savedLang);
+  document.querySelectorAll('.lang-btn').forEach(function(btn){
+    btn.classList.toggle('active',btn.dataset.lang===savedLang);
+    btn.addEventListener('click',function(){
+      var lang=this.dataset.lang;
+      document.documentElement.setAttribute('lang',lang);
+      localStorage.setItem('nt-lang',lang);
+      document.querySelectorAll('.lang-btn').forEach(function(b){
+        b.classList.toggle('active',b.dataset.lang===lang);
+      });
+    });
+  });
+
+  var burger=document.getElementById('burger');
+  var sideNav=document.getElementById('sideNav');
+  burger.addEventListener('click',function(){
+    burger.classList.toggle('open');
+    sideNav.classList.toggle('open');
+  });
+  document.querySelectorAll('.nav-link').forEach(function(link){
+    link.addEventListener('click',function(){
+      burger.classList.remove('open');
+      sideNav.classList.remove('open');
+    });
+  });
+
+  var sections=['home','work','expertise','process','writing','about','contact'];
+  var navLinks=document.querySelectorAll('.nav-link');
+  function updateActive(){
+    var scrollY=window.scrollY+120;
+    var current='home';
+    sections.forEach(function(id){
+      var el=document.getElementById(id);
+      if(el&&el.offsetTop<=scrollY)current=id;
+    });
+    navLinks.forEach(function(link){
+      link.classList.toggle('active',link.dataset.section===current);
+    });
+  }
+  window.addEventListener('scroll',updateActive,{passive:true});
+})();
+</script>
+
+</body>
+</html>
