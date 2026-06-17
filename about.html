@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Natalia Tereshchenko</title>
+<meta name="description" content="Наталия Терещенко — арт-директор в области генеративных медиа. Более одиннадцати лет в визуальных индустриях.">
+<meta property="og:title" content="About — Natalia Tereshchenko">
+<meta property="og:description" content="Наталия Терещенко — арт-директор в области генеративных медиа. Более одиннадцати лет в визуальных индустриях.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23EDE8D9'/%3E%3Ctext x='50' y='62' font-family='Helvetica,Arial,sans-serif' font-size='40' font-weight='500' text-anchor='middle' fill='%231A1A1A'%3ENT%3C/text%3E%3C/svg%3E">
+<script>
+(function(){
+  try {
+    var p = new URLSearchParams(location.search);
+    var t = p.get('theme');
+    if (!t) { try { t = localStorage.getItem('nt-theme'); } catch(e){} }
+    if (!t) {
+      t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      try { localStorage.setItem('nt-theme', t); } catch(e){}
+    }
+    if (t === 'dark') document.documentElement.classList.add('dark');
+    var l = p.get('lang');
+    if (!l) { try { l = localStorage.getItem('nt-lang'); } catch(e){} }
+    if (!l) l = 'ru';
+    document.documentElement.setAttribute('lang', l);
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-name"><a href="index.html">Natalia Tereshchenko</a></div>
+    <div class="site-meta"><span class="lang-ru">PORTFOLIO  05.2026</span><span class="lang-en">PORTFOLIO  05.2026</span></div>
+    <div class="controls">
+      <div class="lang-switcher"><button class="lang-btn active" data-lang="ru">RU</button><button class="lang-btn" data-lang="en">EN</button></div>
+      <div class="theme-switcher"><button class="theme-btn" id="themeToggle" aria-label="Toggle theme"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button></div>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+
+  <nav class="side-nav" id="sideNav">
+    <a href="index.html"     class="nav-link">Home</a>
+    <a href="work.html"      class="nav-link">Work</a>
+    <a href="expertise.html" class="nav-link">Expertise</a>
+    <a href="process.html"   class="nav-link">Process</a>
+    <a href="writing.html"   class="nav-link">Writing</a>
+    <a href="about.html"     class="nav-link active">About</a>
+    <a href="contact.html"   class="nav-link">Contact</a>
+    <div class="side-nav-tag">↑ ART DIRECTOR</div>
+  </nav>
+
+  <main>
+
+    <section id="about">
+          <h2 class="section-title">Art Director</h2>
+          <p class="section-sub"><span class="lang-ru">Режиссура мультимедиа, моушн-дизайн, генеративные системы</span><span class="lang-en">Multimedia direction, motion design, generative systems</span></p>
+          <blockquote class="about-quote"><span class="lang-ru">«Проектирую визуальные системы на стыке режиссуры, нейросетей и real-time-графики».</span><span class="lang-en">"Designing visual systems at the intersection of direction, neural networks and real-time graphics."</span></blockquote>
+
+          <p class="about-text lang-ru">Наталия Терещенко, арт-директор в области генеративных медиа. Более одиннадцати лет работаю в визуальных индустриях: режиссура, монтаж, моушн-дизайн, VFX, промпт-инженерия. Образование: режиссура мультимедиа программ (СПбГУП, 2017), киножурналистика (ШИКИ, 2022), VFX-подготовка (VFX LAB, 2023). Короткометражный фильм «Стример» — приз за режиссуру фестиваля «Старкон», 2017.</p>
+          <p class="about-text lang-ru">Веду проекты от брифа до приёмки. Руковожу процессом в небольших группах, работаю внутри больших команд — в том числе в пайплайне международной студии. Выстраиваю пайплайн с нуля там, где его нет, провожу пресейл-презентации, работаю с креативными продюсерами, структурирую задачи, держу процессы в проектах с меняющимся брифом. В Setl Group развила корпоративный YouTube с нуля до более чем 25 000 подписчиков, запустила подкаст, вошедший в топ-5 рубрики.</p>
+          <p class="about-text lang-ru">С нейросетями работаю системно. Выстраиваю пайплайны генерации под эстетику продукта, тренирую модели под запрос, разворачиваю локальные серверы, пишу воспроизводимые промпты.</p>
+          <p class="about-text lang-ru">Основной исследовательский фокус — режиссура мультимедиа и геймдизайн с использованием генеративных инструментов: разработка сценарных структур через нейросети, построение визуального мира игры в смешанном пайплайне, проектирование real-time визуальных систем в TouchDesigner и Unreal Engine для инсталляционных и выставочных форматов.</p>
+          <p class="about-text lang-ru">Открыта к арт-директорским и режиссёрским ролям в киностудиях, продакшнах, музеях и галереях; к проектам с кураторами и издательствами; к работе в области обучающих платформ и AI-продуктов.</p>
+
+          <p class="about-text lang-en">Natalia Tereshchenko, art director in generative media. Over eleven years in visual industries: direction, editing, motion design, VFX, prompt engineering. Education: multimedia direction (SPbGUP, 2017), film journalism (SHIKI, 2022), VFX (VFX LAB, 2023). Short film "Streamer" — Best Direction at Starcon, 2017.</p>
+          <p class="about-text lang-en">I run projects from brief to delivery. I lead processes in small groups and work within larger teams. At Setl Group I grew a corporate YouTube from zero to over 25,000 subscribers and launched a podcast that reached top-5 in its category.</p>
+          <p class="about-text lang-en">I work with neural networks systematically. I build generation pipelines aligned with product aesthetics, train models for specific requirements, deploy local servers, write reproducible prompts.</p>
+          <p class="about-text lang-en">Main research focus — multimedia direction and game design with generative tools, real-time visual systems in TouchDesigner and Unreal Engine for installations and exhibitions.</p>
+          <p class="about-text lang-en">Open to art director and director roles in film studios, production houses, museums and galleries; projects with curators and publishers; work in EdTech platforms and AI products.</p>
+
+          <div class="section-label" style="margin-top:32px">↓ BACKGROUND</div>
+          <div class="background-row"><div class="background-year">2024→</div><div>SlowDive · Prompt motion direction</div></div>
+          <div class="background-row"><div class="background-year">2023→</div><div>Recent work / Freelance</div></div>
+          <div class="background-row"><div class="background-year">2022–23</div><div>G5 Games · Motion design</div></div>
+          <div class="background-row"><div class="background-year">2022</div><div><span class="lang-ru">«Искусство кино» · Редакционный дизайн</span><span class="lang-en">Iskusstvo Kino · Editorial design</span></div></div>
+          <div class="background-row"><div class="background-year">2018–21</div><div>Setl Group · Motion, video, podcast production</div></div>
+          <div class="background-row"><div class="background-year">2017–18</div><div>On/Off studio<span class="lang-ru"> · Видеодизайн, режиссура</span><span class="lang-en"> · Video design, direction</span></div></div>
+          <div class="background-row"><div class="background-year">2013→</div><div>Practice · Motion, video, editing</div></div>
+        </section>
+
+  </main>
+
+  <aside class="meta-col" id="metaCol">
+    <div class="meta-label">CONTACT</div>
+    <div class="meta-val">natashamanina@gmail.com<br>@whimberry  Telegram</div>
+    <div class="meta-label">LANGUAGES</div>
+    <div class="meta-val"><span class="lang-ru">Русский — родной<br>English — B2</span><span class="lang-en">Russian — native<br>English — B2</span></div>
+    <div class="meta-label">YEARS IN VISUAL</div>
+    <div class="meta-val">11+</div>
+    <div class="meta-label">CV</div>
+    <div class="meta-val"><a href="assets/cv.pdf" download>→ Download PDF</a></div>
+    <div class="meta-label">START HERE</div>
+    <div class="meta-val"><a href="work.html">→ Work</a><br><a href="writing.html">→ Writing</a><br><a href="about.html">→ About</a></div>
+  </aside>
+
+</div>
+
+<footer class="ticker">
+  <div>NOW IN PRODUCTION</div>
+  <div class="ticker-center">GAMEDEV × AI × EDITORIAL × FILM ESSAY</div>
+  <div><a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ TOP</a></div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
