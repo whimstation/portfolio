@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expertise — Natalia Tereshchenko</title>
+<meta name="description" content="Три плана работы: Direction, Generative & Prompt, Motion & Real-time.">
+<meta property="og:title" content="Expertise — Natalia Tereshchenko">
+<meta property="og:description" content="Три плана работы: Direction, Generative & Prompt, Motion & Real-time.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23EDE8D9'/%3E%3Ctext x='50' y='62' font-family='Helvetica,Arial,sans-serif' font-size='40' font-weight='500' text-anchor='middle' fill='%231A1A1A'%3ENT%3C/text%3E%3C/svg%3E">
+<script>
+(function(){
+  try {
+    var p = new URLSearchParams(location.search);
+    var t = p.get('theme');
+    if (!t) { try { t = localStorage.getItem('nt-theme'); } catch(e){} }
+    if (!t) {
+      t = (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+      try { localStorage.setItem('nt-theme', t); } catch(e){}
+    }
+    if (t === 'dark') document.documentElement.classList.add('dark');
+    var l = p.get('lang');
+    if (!l) { try { l = localStorage.getItem('nt-lang'); } catch(e){} }
+    if (!l) l = 'ru';
+    document.documentElement.setAttribute('lang', l);
+  } catch (e) {}
+})();
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="site-name"><a href="index.html">Natalia Tereshchenko</a></div>
+    <div class="site-meta"><span class="lang-ru">PORTFOLIO  05.2026</span><span class="lang-en">PORTFOLIO  05.2026</span></div>
+    <div class="controls">
+      <div class="lang-switcher"><button class="lang-btn active" data-lang="ru">RU</button><button class="lang-btn" data-lang="en">EN</button></div>
+      <div class="theme-switcher"><button class="theme-btn" id="themeToggle" aria-label="Toggle theme"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg></button></div>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+
+  <nav class="side-nav" id="sideNav">
+    <a href="index.html"     class="nav-link">Home</a>
+    <a href="work.html"      class="nav-link">Work</a>
+    <a href="expertise.html" class="nav-link active">Expertise</a>
+    <a href="process.html"   class="nav-link">Process</a>
+    <a href="writing.html"   class="nav-link">Writing</a>
+    <a href="about.html"     class="nav-link">About</a>
+    <a href="contact.html"   class="nav-link">Contact</a>
+    <div class="side-nav-tag">↑ ART DIRECTOR</div>
+  </nav>
+
+  <main>
+
+    <section id="expertise">
+          <h2 class="section-title">Expertise</h2>
+          <p class="section-sub"><span class="lang-ru">Три плана работы: смысл, генерация, продакшн</span><span class="lang-en">Three layers: meaning, generation, production</span></p>
+
+          <div class="pillar">
+            <div class="pillar-head"><div class="pillar-num">01</div><div class="pillar-title">Direction</div></div>
+            <div class="pillar-body"><span class="lang-ru">Часть работы, в которой принимаются решения о смысле и форме проекта: что он должен сказать, какой визуальный язык для этого нужен, как устроен процесс, который этого языка достигает.</span><span class="lang-en">The layer of work where decisions about meaning and form are made: what the project needs to say, what visual language carries that, how the process is structured.</span></div>
+            <div class="pillar-stack"><strong><span class="lang-ru">Креативная стратегия</span><span class="lang-en">Creative strategy</span></strong> · <strong><span class="lang-ru">Руководство процессом</span><span class="lang-en">Process leadership</span></strong> · <strong><span class="lang-ru">Презентации и приёмка</span><span class="lang-en">Pitches and approvals</span></strong></div>
+          </div>
+
+          <div class="pillar">
+            <div class="pillar-head"><div class="pillar-num">02</div><div class="pillar-title">Generative & Prompt</div></div>
+            <div class="pillar-body"><span class="lang-ru">Работа с генеративными моделями как с частью производственного пайплайна. Промпт-инженерия, воспроизводимые библиотеки промптов, тренировка LoRA, локальная инфраструктура.</span><span class="lang-en">Working with generative models as part of a production pipeline. Prompt engineering, reproducible prompt libraries, LoRA training, local infrastructure.</span></div>
+            <div class="pillar-stack"><strong>LLM:</strong> Claude · GPT · Gemini<br><strong>Image:</strong> Midjourney · Flux · Stable Diffusion + ComfyUI · Nano Banana<br><strong>Video:</strong> Veo 3 · Sora 2 · Runway · KLING · Luma · Vidu · Hailuo<br><strong>Audio:</strong> Suno · ElevenLabs &nbsp;·&nbsp; <strong>UGC:</strong> HeyGen · arcads.ai</div>
+          </div>
+
+          <div class="pillar">
+            <div class="pillar-head"><div class="pillar-num">03</div><div class="pillar-title">Motion & Real-time</div></div>
+            <div class="pillar-body"><span class="lang-ru">Продакшн-часть работы: моушн-дизайн, 3D, композитинг, real-time визуальные системы. Двенадцатый год работаю в этом ремесле.</span><span class="lang-en">The production side: motion design, 3D, compositing, real-time visual systems. Twelfth year in this craft.</span></div>
+            <div class="pillar-stack"><strong>After Effects</strong><span class="lang-ru"> — 2D-моушн, композ, плагины, частицы, Duik, VFX</span><span class="lang-en"> — 2D motion, compositing, plugins, particles, Duik, VFX</span><br><strong>3D</strong> — Cinema 4D + Redshift, Substance Painter; Houdini · Blender<br><strong>TouchDesigner</strong><span class="lang-ru"> — real-time системы для инсталляций</span><span class="lang-en"> — real-time systems for installations</span><br><strong>Unreal Engine 5</strong> — Niagara · Mixamo<br><strong>Spine · DaVinci Resolve · Premiere Pro · Insta360</strong></div>
+          </div>
+        </section>
+
+  </main>
+
+  <aside class="meta-col" id="metaCol">
+    <div class="meta-label">CONTACT</div>
+    <div class="meta-val">natashamanina@gmail.com<br>@whimberry  Telegram</div>
+    <div class="meta-label">LANGUAGES</div>
+    <div class="meta-val"><span class="lang-ru">Русский — родной<br>English — B2</span><span class="lang-en">Russian — native<br>English — B2</span></div>
+    <div class="meta-label">YEARS IN VISUAL</div>
+    <div class="meta-val">11+</div>
+    <div class="meta-label">CV</div>
+    <div class="meta-val"><a href="assets/cv.pdf" download>→ Download PDF</a></div>
+    <div class="meta-label">START HERE</div>
+    <div class="meta-val"><a href="work.html">→ Work</a><br><a href="writing.html">→ Writing</a><br><a href="about.html">→ About</a></div>
+  </aside>
+
+</div>
+
+<footer class="ticker">
+  <div>NOW IN PRODUCTION</div>
+  <div class="ticker-center">GAMEDEV × AI × EDITORIAL × FILM ESSAY</div>
+  <div><a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">↑ TOP</a></div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
