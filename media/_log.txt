@@ -1,0 +1,245 @@
+$ curl -sSL --fail -o /tmp/tmpdds87svj/src https://drive.usercontent.google.com/download?id=12d5WsmWpp4FQwp6uGBbnVIomdbDshPSW&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpdds87svj/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpdds87svj/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/sd-01.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/portfol  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpya39gn01/src https://drive.usercontent.google.com/download?id=1uSd3btyI2iZDe93_DL_HdmMyd6Ar_Cro&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpya39gn01/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpya39gn01/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/sd-02.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/portfol  -> 0
+
+$ curl -sSL --fail -o /tmp/tmptzfi2nj_/src https://drive.usercontent.google.com/download?id=19jtgZ3-Z4HCq--o-c318sbM-s2YOb4TJ&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmptzfi2nj_/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmptzfi2nj_/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/sd-03.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/portfol  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpckq72zw0/src https://drive.usercontent.google.com/download?id=1VTgv3zQP0eYWwd2uFRVQO-Aljjp6TtQ4&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpckq72zw0/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpckq72zw0/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/sd-04.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/portfol  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpimd8w659/src https://drive.usercontent.google.com/download?id=1k--URh0uWmUEnYfzLii9HtlgDDqE8NCk&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpimd8w659/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpimd8w659/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/sd-05.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/portfol  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpreu_ptyf/src https://drive.usercontent.google.com/download?id=1jZK8uW7sOiOgLsHtoYLa2MG1ZVkVm8z_&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpreu_ptyf/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpreu_ptyf/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/sd-06.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/portfol  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpvk3w_4pf/src https://drive.usercontent.google.com/download?id=1atbPMqH6wKSlCSQ_hJNaZxW1gReu0n6g&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpvk3w_4pf/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpvk3w_4pf/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/sd-07.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/portfol  -> 0
+
+$ curl -sSL --fail -o /tmp/tmplmre9w6o/src https://drive.usercontent.google.com/download?id=1zN7ALmQPTCA8bWrE4UxBEEqm_pmq-CSD&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmplmre9w6o/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmplmre9w6o/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/sd-08.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/portfol  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpu0zajw_2/src https://drive.usercontent.google.com/download?id=15THG_ZZNjGsejkixQnMieskeBtKEctE2&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpu0zajw_2/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpu0zajw_2/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/sd-09.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/portfol  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpql4oaqwj/src https://drive.usercontent.google.com/download?id=1vybJ9qD2SxKRmdqJtojRWNdM0r1s8vYz&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpql4oaqwj/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpql4oaqwj/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/sd-10.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/portfol  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpcsbyu6gu/src https://drive.usercontent.google.com/download?id=1i8oNiqK__AU8RKt10XEap6kTWUi2IgeZ&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpcsbyu6gu/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpcsbyu6gu/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/rw-bumpin.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/por  -> 0
+
+$ curl -sSL --fail -o /tmp/tmprzcy6j5j/src https://drive.usercontent.google.com/download?id=1hZ7JLuvlxXyHsmNMCJ7ziWvDkT9Rb_Nn&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmprzcy6j5j/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmprzcy6j5j/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/rw-kstudio-1.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpws_zjtq5/src https://drive.usercontent.google.com/download?id=1ct7z1eRNR2yUrFJBgN4hDbNTIa0tfKZR&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpws_zjtq5/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpws_zjtq5/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/rw-kstudio-2.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpvm4z8ynp/src https://drive.usercontent.google.com/download?id=1ynbKj3pKOnfjbfFbtPlq8IoOuS8Z-_a2&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpvm4z8ynp/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpvm4z8ynp/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/rw-kstudio-3.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpatqhmuz3/src https://drive.usercontent.google.com/download?id=1zslegw1UB5wzZ7fiJueARCYu4af3Mnya&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpatqhmuz3/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpatqhmuz3/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/rw-duality.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/po  -> 0
+
+$ curl -sSL --fail -o /tmp/tmp0og5pw8a/src https://drive.usercontent.google.com/download?id=1rJ_lGW8WreyDE5_d8J7FUmN2hvT_tzuB&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmp0og5pw8a/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmp0og5pw8a/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/g5-slk-sd-027.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work  -> 0
+
+$ curl -sSL --fail -o /tmp/tmp60gaff2i/src https://drive.usercontent.google.com/download?id=1UU8DrIq0fS30wRTbIz5S55quh7k77dJX&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmp60gaff2i/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmp60gaff2i/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/g5-slk-ml0332.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpvvcf_tlo/src https://drive.usercontent.google.com/download?id=1WrOx8oJZr2K2R0BvT1lCmso4ZsFAnwGb&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpvvcf_tlo/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpvvcf_tlo/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/g5-hidden-mystery.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpozhd09fs/src https://drive.usercontent.google.com/download?id=1jvWlGFvdCt-V_o-s2-j0OQxM-uVFzpvZ&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpozhd09fs/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpozhd09fs/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/g5-jow-st0194.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work  -> 0
+
+$ curl -sSL --fail -o /tmp/tmptywu83kd/src https://drive.usercontent.google.com/download?id=1SLi8l-rc8zNFDyUvUvIbUi9c_xbypfbX&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmptywu83kd/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmptywu83kd/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/g5-slk-ml0176.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work  -> 0
+
+$ curl -sSL --fail -o /tmp/tmp_krl4087/src https://drive.usercontent.google.com/download?id=1LtjM3RRp2KmPyDEaaKLyRTDe016EsR6L&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmp_krl4087/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmp_krl4087/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/g5-slk-rewards.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/wor  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpgx2psd8s/src https://drive.usercontent.google.com/download?id=1gMH_DTVEZyySXwh3Ug-NfMNCVUjQAe9H&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpgx2psd8s/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpgx2psd8s/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/g5-jod-st0003.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work  -> 0
+
+$ curl -sSL --fail -o /tmp/tmpoo6v2q6w/src https://drive.usercontent.google.com/download?id=1Br4pbxLxjRALI480nUCJXWRGLRZWVfvl&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpoo6v2q6w/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpoo6v2q6w/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/setl-hero.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/work/por  -> 0
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpqplqlumz/yt.%(ext)s https://www.youtube.com/watch?v=IdjfGNnEJZ8  -> 1
+ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu09nqe7o/yt.%(ext)s https://www.youtube.com/watch?v=4USr0ds-Pts  -> 1
+ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp1mhsz359/yt.%(ext)s https://www.youtube.com/watch?v=Y5eHpqU412Y  -> 1
+ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpas33gwrj/yt.%(ext)s https://www.youtube.com/watch?v=JVDcFhWzQX0  -> 1
+ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpveld9k9p/yt.%(ext)s https://www.youtube.com/watch?v=mNnjZSLsuC8  -> 1
+ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpanwt6n5y/yt.%(ext)s https://www.youtube.com/watch?v=1G7r0q5Bwus  -> 1
+ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ curl -sSL --fail -o /tmp/tmpyxxkbsvz/src https://drive.usercontent.google.com/download?id=1eX9LHihQm7GWFNCoDRKvXuW_dAp7H9WT&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpyxxkbsvz/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpyxxkbsvz/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/onoff-streamer.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/wor  -> 0
+
+$ curl -sSL --fail -o /tmp/tmp12nhxyog/src https://drive.usercontent.google.com/download?id=1STmCH1ChLVoi8tq_QxCNoDC0xp8ltF3M&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmp12nhxyog/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmp12nhxyog/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/onoff-stereoleto.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/w  -> 0
+
+$ curl -sSL --fail -o /tmp/tmppahdg21i/src https://drive.usercontent.google.com/download?id=1KvpEneccCgNQha1r6FJcCPA5UlhdMX8b&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmppahdg21i/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmppahdg21i/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/onoff-alpenhouse.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/w  -> 0
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpc1fy9t17/yt.%(ext)s https://www.youtube.com/watch?v=v8i25gDDUAA  -> 1
+ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpvv1cezoz/yt.%(ext)s https://www.youtube.com/watch?v=t7ha8Gd2CUY  -> 1
+ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp1w8roqdo/yt.%(ext)s https://www.youtube.com/watch?v=S4vb2Ay8VNc  -> 1
+ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ curl -sSL --fail -o /tmp/tmpy3aufyg2/src https://drive.usercontent.google.com/download?id=1X72z0H8kQ-6Usq_EHw57O4pwWtXCntGZ&export=download&confirm=t  -> 0
+
+$ ffmpeg -v error -t 1 -i /tmp/tmpy3aufyg2/src -f null -  -> 0
+
+$ ffmpeg -y -loglevel error -i /tmp/tmpy3aufyg2/src -vf scale='min(1280,iw)':'min(1280,ih)':force_original_aspect_ratio=decrease,scale=trunc(iw/2)*2:trunc(ih/2)*2  -> 0
+
+$ ffmpeg -y -loglevel error -ss 1 -i /home/runner/work/portfolio/portfolio/media/practice-unreal.mp4 -frames:v 1 -vf scale='min(720,iw)':-2 -q:v 4 /home/runner/wo  -> 0
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp89c_9c2i/yt.%(ext)s https://www.youtube.com/watch?v=I5iwMWRCfoU  -> 1
+ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
