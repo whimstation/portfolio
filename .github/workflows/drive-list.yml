@@ -18,7 +18,7 @@ jobs:
           python3 - <<'PY'
           import gdown, os, traceback
           try:
-              files = gdown.download_folder(os.environ['URL'], skip_download=True, quiet=False, remaining_ok=True) or []
+              files = gdown.download_folder(os.environ['URL'], skip_download=True, quiet=False) or []
               out = ''.join(f'{f.id}\t{f.path}\n' for f in files)
           except Exception:
               out = 'ERROR\n' + traceback.format_exc()
