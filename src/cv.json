@@ -85,14 +85,14 @@
   },
 
   "skills": {
-    "design": ["Дизайн", "Photoshop · Illustrator · Figma · редакционный дизайн и работа в гайдлайне"],
-    "motion": ["Моушн и 3D", "After Effects (Element 3D, Duik, частицы, кеинг) · Cinema 4D + Redshift · Substance Painter · Spine · базово Houdini, Blender"],
-    "video": ["Видео и звук", "Premiere Pro · DaVinci Resolve · операторская работа, коптер, Insta360 · цветокоррекция · саунд-дизайн"],
-    "realtime": ["Real-time", "TouchDesigner · Unreal Engine 5 (Niagara)"],
-    "genai": ["Генеративные медиа", "Midjourney · Flux / Kontext · Stable Diffusion + ComfyUI · обучение LoRA · Nano Banana · Veo 3 · Sora 2 · Runway · KLING · Luma · Vidu · Hailuo · HeyGen · arcads.ai · Suno · ElevenLabs · Topaz AI"],
-    "llm": ["LLM", "Claude · GPT · Gemini — сценарные структуры, брифы, воспроизводимые промпты"],
-    "pm": ["Процессы", "Jira · Trello · Notion · ведение проекта от брифа до сдачи · пресейл и защита концепций · работа с продюсерами"],
-    "text": ["Тексты", "кинокритика · литературные эссе · сценарии обучающих видео · корректура"]
+    "design": ["Дизайн", "Photoshop, Illustrator, Figma, редакционный дизайн и работа в гайдлайне"],
+    "motion": ["Моушн и 3D", "After Effects (Element 3D, Duik, частицы, кеинг), Cinema 4D + Redshift, Substance Painter, Spine, базово Houdini, Blender"],
+    "video": ["Видео и звук", "Premiere Pro, DaVinci Resolve, операторская работа, коптер, Insta360, цветокоррекция, саунд-дизайн"],
+    "realtime": ["Real-time", "TouchDesigner, Unreal Engine 5 (Niagara)"],
+    "genai": ["Генеративные медиа", "Midjourney, Flux / Kontext, Stable Diffusion + ComfyUI, обучение LoRA, Nano Banana, Veo 3, Sora 2, Runway, KLING, Luma, Vidu, Hailuo, HeyGen, arcads.ai, Suno, ElevenLabs, Topaz AI"],
+    "llm": ["LLM", "Claude, GPT, Gemini — сценарные структуры, брифы, воспроизводимые промпты"],
+    "pm": ["Процессы", "Jira, Trello, Notion, ведение проекта от брифа до сдачи, пресейл и защита концепций, работа с продюсерами"],
+    "text": ["Тексты", "кинокритика, литературные эссе, сценарии обучающих видео, корректура"]
   },
 
   "education": [
@@ -108,7 +108,7 @@
     ["2025", "HOG Leningrad Chapter — фестивальный показ"],
     ["—", "«Не в форме» (реж. Е. Чичканов) — съёмка бэкстейджа; «Дай мне ритм!» (реж. Д. Гушан) — анимация титров"]
   ],
-  "languages": "Русский — родной · English — B2",
+  "languages": "Русский — родной, English — B2",
 
   "writing": [
     ["«Искусство кино», 2022", "«Краткая история корейского кино: от Арирана до Паразитов» — соавтор большого редакционного материала", "https://kinoart.ru/cards/kratkaya-istoriya-koreyskogo-kino-ot-arirana-do-parazitov"],
