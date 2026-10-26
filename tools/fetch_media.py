@@ -45,6 +45,30 @@ def download(m, tmp):
                 f = glob.glob(os.path.join(tmp, 'yt.*'))
                 if f:
                     return f[0]
+    # запасной путь: публичные зеркала YouTube (Invidious / Piped)
+    for y in ids:
+        dst = os.path.join(tmp, 'mirror.mp4')
+        urls = [f'https://{h}/latest_version?id={y}&itag={it}&local=true'
+                for h in ('inv.nadeko.net', 'invidious.nerdvpn.de', 'yewtu.be', 'invidious.privacyredirect.com',
+                          'iv.melmac.space', 'invidious.f5.si', 'id.420129.xyz', 'invidious.jing.rocks')
+                for it in (22, 18)]
+        for u in urls:
+            if run(['curl', '-sSL', '--fail', '--max-time', '300', '-A', 'Mozilla/5.0', '-o', dst, u]) and \
+                    os.path.getsize(dst) > 50000 and run(['ffmpeg', '-v', 'error', '-t', '1', '-i', dst, '-f', 'null', '-']):
+                return dst
+        for api in ('https://pipedapi.kavin.rocks', 'https://pipedapi.adminforge.de', 'https://api.piped.private.coffee'):
+            try:
+                import urllib.request
+                req = urllib.request.Request(f'{api}/streams/{y}', headers={'User-Agent': 'Mozilla/5.0'})
+                info = json.load(urllib.request.urlopen(req, timeout=30))
+                vs = [v for v in info.get('videoStreams', []) if not v.get('videoOnly') and v.get('url')]
+                vs.sort(key=lambda v: int((v.get('quality') or '0p').rstrip('p') or 0), reverse=True)
+                for v in vs[:2]:
+                    if run(['curl', '-sSL', '--fail', '--max-time', '300', '-o', dst, v['url']]) and \
+                            os.path.getsize(dst) > 50000 and run(['ffmpeg', '-v', 'error', '-t', '1', '-i', dst, '-f', 'null', '-']):
+                        return dst
+            except Exception as e:
+                LOG.append(f'piped {api} {y}: {e}')
     return None
 
 
