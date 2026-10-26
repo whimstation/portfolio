@@ -16,10 +16,14 @@ jobs:
         env: {URL: "${{ inputs.url }}"}
         run: |
           python3 - <<'PY'
-          import gdown, os
-          files = gdown.download_folder(os.environ['URL'], skip_download=True, quiet=True, remaining_ok=True) or []
-          open('media/_drive_list.txt', 'w').write(''.join(f'{f.id}\t{f.path}\n' for f in files))
-          print(len(files))
+          import gdown, os, traceback
+          try:
+              files = gdown.download_folder(os.environ['URL'], skip_download=True, quiet=False, remaining_ok=True) or []
+              out = ''.join(f'{f.id}\t{f.path}\n' for f in files)
+          except Exception:
+              out = 'ERROR\n' + traceback.format_exc()
+          open('media/_drive_list.txt', 'w').write(out)
+          print(out)
           PY
       - run: |
           git config user.name "portfolio-bot"; git config user.email "actions@users.noreply.github.com"
