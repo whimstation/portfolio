@@ -36,12 +36,15 @@ def download(m, tmp):
                 return dst
     ids = [m['yt']] if 'yt' in m else []
     ids += [o for o in m.get('old', []) if len(o) == 11]
+    clients = ['default', 'tv_embedded', 'web_embedded', 'android_vr', 'ios', 'mweb', 'tv']
     for y in ids:
-        if run(['yt-dlp', '-q', '--no-warnings', '-f', 'bv*[height<=1080]+ba/b', '--merge-output-format', 'mp4',
-                '-o', os.path.join(tmp, 'yt.%(ext)s'), f'https://www.youtube.com/watch?v={y}']):
-            f = glob.glob(os.path.join(tmp, 'yt.*'))
-            if f:
-                return f[0]
+        for c in clients:
+            extra = [] if c == 'default' else ['--extractor-args', f'youtube:player_client={c}']
+            if run(['yt-dlp', '-q', '--no-warnings', *extra, '-f', 'bv*[height<=1080]+ba/b', '--merge-output-format', 'mp4',
+                    '-o', os.path.join(tmp, 'yt.%(ext)s'), f'https://www.youtube.com/watch?v={y}']):
+                f = glob.glob(os.path.join(tmp, 'yt.*'))
+                if f:
+                    return f[0]
     return None
 
 
