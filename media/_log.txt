@@ -1,29 +1,209 @@
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xqx3w_q/yt.%(ext)s https://www.youtube.com/watch?v=IdjfGNnEJZ8  -> 1
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpe0bpc8fa/yt.%(ext)s https://www.youtube.com/watch?v=IdjfGNnEJZ8  -> 1
 ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpwulb2cv_/yt.%(ext)s https://www.youtube.com/watch?v=4USr0ds-Pts  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpe0bpc8fa/yt.%(ext)s ht  -> 1
+ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpe0bpc8fa/yt.%(ext)s h  -> 1
+ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpe0bpc8fa/yt.%(ext)s htt  -> 1
+ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpe0bpc8fa/yt.%(ext)s https://ww  -> 1
+ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpe0bpc8fa/yt.%(ext)s https://w  -> 1
+ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpe0bpc8fa/yt.%(ext)s https://www  -> 1
+ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu0x0ae5u/yt.%(ext)s https://www.youtube.com/watch?v=4USr0ds-Pts  -> 1
 ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp0nkjiw9y/yt.%(ext)s https://www.youtube.com/watch?v=Y5eHpqU412Y  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu0x0ae5u/yt.%(ext)s ht  -> 1
+ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu0x0ae5u/yt.%(ext)s h  -> 1
+ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu0x0ae5u/yt.%(ext)s htt  -> 1
+ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu0x0ae5u/yt.%(ext)s https://ww  -> 1
+ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu0x0ae5u/yt.%(ext)s https://w  -> 1
+ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu0x0ae5u/yt.%(ext)s https://www  -> 1
+ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpftv7uksw/yt.%(ext)s https://www.youtube.com/watch?v=Y5eHpqU412Y  -> 1
 ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpitr5z3n_/yt.%(ext)s https://www.youtube.com/watch?v=JVDcFhWzQX0  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpftv7uksw/yt.%(ext)s ht  -> 1
+ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpftv7uksw/yt.%(ext)s h  -> 1
+ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpftv7uksw/yt.%(ext)s htt  -> 1
+ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpftv7uksw/yt.%(ext)s https://ww  -> 1
+ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpftv7uksw/yt.%(ext)s https://w  -> 1
+ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpftv7uksw/yt.%(ext)s https://www  -> 1
+ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpohwt0zzi/yt.%(ext)s https://www.youtube.com/watch?v=JVDcFhWzQX0  -> 1
 ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp6rg85vwl/yt.%(ext)s https://www.youtube.com/watch?v=mNnjZSLsuC8  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpohwt0zzi/yt.%(ext)s ht  -> 1
+ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpohwt0zzi/yt.%(ext)s h  -> 1
+ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpohwt0zzi/yt.%(ext)s htt  -> 1
+ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpohwt0zzi/yt.%(ext)s https://ww  -> 1
+ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpohwt0zzi/yt.%(ext)s https://w  -> 1
+ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpohwt0zzi/yt.%(ext)s https://www  -> 1
+ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xd6ihjv/yt.%(ext)s https://www.youtube.com/watch?v=mNnjZSLsuC8  -> 1
 ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpod364f5v/yt.%(ext)s https://www.youtube.com/watch?v=1G7r0q5Bwus  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xd6ihjv/yt.%(ext)s ht  -> 1
+ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xd6ihjv/yt.%(ext)s h  -> 1
+ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xd6ihjv/yt.%(ext)s htt  -> 1
+ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xd6ihjv/yt.%(ext)s https://ww  -> 1
+ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xd6ihjv/yt.%(ext)s https://w  -> 1
+ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xd6ihjv/yt.%(ext)s https://www  -> 1
+ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp_5b0y5ly/yt.%(ext)s https://www.youtube.com/watch?v=1G7r0q5Bwus  -> 1
 ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp7rl1ye5u/yt.%(ext)s https://www.youtube.com/watch?v=v8i25gDDUAA  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp_5b0y5ly/yt.%(ext)s ht  -> 1
+ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp_5b0y5ly/yt.%(ext)s h  -> 1
+ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp_5b0y5ly/yt.%(ext)s htt  -> 1
+ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp_5b0y5ly/yt.%(ext)s https://ww  -> 1
+ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp_5b0y5ly/yt.%(ext)s https://w  -> 1
+ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp_5b0y5ly/yt.%(ext)s https://www  -> 1
+ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpzz10vkt8/yt.%(ext)s https://www.youtube.com/watch?v=v8i25gDDUAA  -> 1
 ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpv6ffb7xz/yt.%(ext)s https://www.youtube.com/watch?v=t7ha8Gd2CUY  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpzz10vkt8/yt.%(ext)s ht  -> 1
+ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpzz10vkt8/yt.%(ext)s h  -> 1
+ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpzz10vkt8/yt.%(ext)s htt  -> 1
+ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpzz10vkt8/yt.%(ext)s https://ww  -> 1
+ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpzz10vkt8/yt.%(ext)s https://w  -> 1
+ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpzz10vkt8/yt.%(ext)s https://www  -> 1
+ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp2sxmz0ri/yt.%(ext)s https://www.youtube.com/watch?v=t7ha8Gd2CUY  -> 1
 ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp6vc5j34n/yt.%(ext)s https://www.youtube.com/watch?v=S4vb2Ay8VNc  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp2sxmz0ri/yt.%(ext)s ht  -> 1
+ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp2sxmz0ri/yt.%(ext)s h  -> 1
+ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp2sxmz0ri/yt.%(ext)s htt  -> 1
+ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp2sxmz0ri/yt.%(ext)s https://ww  -> 1
+ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp2sxmz0ri/yt.%(ext)s https://w  -> 1
+ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp2sxmz0ri/yt.%(ext)s https://www  -> 1
+ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp8puoqu7i/yt.%(ext)s https://www.youtube.com/watch?v=S4vb2Ay8VNc  -> 1
 ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp3yvwoehs/yt.%(ext)s https://www.youtube.com/watch?v=I5iwMWRCfoU  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp8puoqu7i/yt.%(ext)s ht  -> 1
+ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp8puoqu7i/yt.%(ext)s h  -> 1
+ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp8puoqu7i/yt.%(ext)s htt  -> 1
+ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp8puoqu7i/yt.%(ext)s https://ww  -> 1
+ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp8puoqu7i/yt.%(ext)s https://w  -> 1
+ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp8puoqu7i/yt.%(ext)s https://www  -> 1
+ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphz99z8yf/yt.%(ext)s https://www.youtube.com/watch?v=I5iwMWRCfoU  -> 1
+ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphz99z8yf/yt.%(ext)s ht  -> 1
+ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphz99z8yf/yt.%(ext)s h  -> 1
+ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphz99z8yf/yt.%(ext)s htt  -> 1
+ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphz99z8yf/yt.%(ext)s https://ww  -> 1
+ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphz99z8yf/yt.%(ext)s https://w  -> 1
+ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphz99z8yf/yt.%(ext)s https://www  -> 1
 ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
