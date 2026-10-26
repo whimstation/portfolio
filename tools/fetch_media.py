@@ -14,20 +14,25 @@ LOG = []
 
 
 def run(cmd):
-    r = subprocess.run(cmd, capture_output=True, text=True)
+    try:
+        r = subprocess.run(cmd, capture_output=True, text=True, timeout=600)
+    except subprocess.TimeoutExpired:
+        LOG.append('$ ' + ' '.join(cmd)[:160] + '  -> TIMEOUT')
+        return False
     LOG.append('$ ' + ' '.join(cmd)[:160] + f'  -> {r.returncode}\n' + (r.stdout + r.stderr)[-600:])
     print(LOG[-1], flush=True)
     return r.returncode == 0
 
 
 def download(m, tmp):
+    # каждый внешний вызов ограничен по времени, чтобы сборка не зависала
     if 'drive' in m:
         dst = os.path.join(tmp, 'src')
         i = m['drive']
         for cmd in (['curl', '-sSL', '--fail', '-o', dst, f'https://drive.usercontent.google.com/download?id={i}&export=download&confirm=t'],
                     ['gdown', '--fuzzy', '-O', dst, f'https://drive.google.com/file/d/{i}/view']):
             if run(cmd) and os.path.exists(dst) and os.path.getsize(dst) > 50000 and \
-                    run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', dst]):
+                    run(['ffmpeg', '-v', 'error', '-t', '1', '-i', dst, '-f', 'null', '-']):
                 return dst
     ids = [m['yt']] if 'yt' in m else []
     ids += [o for o in m.get('old', []) if len(o) == 11]
@@ -40,8 +45,13 @@ def download(m, tmp):
     return None
 
 
+import time
+START = time.time()
 failed = []
 for slug, m in MEDIA.items():
+    if time.time() - START > 55 * 60:  # остальное докачает следующий запуск
+        failed.append(slug)
+        continue
     mp4, jpg = os.path.join(OUT, slug + '.mp4'), os.path.join(OUT, slug + '.jpg')
     if os.path.exists(mp4) and os.path.exists(jpg):
         continue
