@@ -1,0 +1,105 @@
+{
+  "_help": "Каждая версия портфолио — блок в versions. Чтобы сделать версию под конкретную вакансию: скопируйте блок, поменяйте id (станет адресом /id/), role, intro, cases, sections, about. Потом python3 build.py (или просто закоммитьте — сайт пересоберётся сам).",
+
+  "person": {
+    "name": {"ru": "Наталия Терещенко", "en": "Natalia Tereshchenko"},
+    "email": "natashamanina@gmail.com",
+    "telegram": "whimberry",
+    "phone": "+7 (911) 754-32-60",
+    "phone_raw": "+79117543260",
+    "based": {"ru": "Санкт-Петербург · удалённо", "en": "St. Petersburg · remote"},
+    "languages": {"ru": "Русский — родной<br>English — B2", "en": "Russian — native<br>English — B2"},
+    "years": "11+"
+  },
+
+  "versions": [
+    {
+      "id": "",
+      "title": "Art Director",
+      "role": {"ru": "Арт-директор · режиссёр мультимедиа · генеративные медиа",
+               "en": "Art director · multimedia director · generative media"},
+      "intro": {"ru": "Проектирую визуальные системы на стыке режиссуры, нейросетей и real-time-графики. Веду проекты от брифа до приёмки — от рекламных креативов и AI-пайплайнов до короткого метра и редакционного дизайна.",
+                "en": "I design visual systems at the intersection of direction, neural networks and real-time graphics. I run projects from brief to delivery — from ad creatives and AI pipelines to short film and editorial design."},
+      "cases": ["slowdive", "g5-games", "on-off-studio", "recent-work", "setl-group", "iskusstvo-kino"],
+      "sections": ["work", "writing", "practice", "about", "contact"],
+      "about": ["intro", "projects", "ai", "focus", "open"],
+      "ticker": "GAMEDEV × AI · EDITORIAL · FILM",
+      "cv": "assets/cv.pdf"
+    },
+    {
+      "id": "creative",
+      "title": "Director · Art Director",
+      "role": {"ru": "Режиссёр · арт-директор · моушн и видео",
+               "en": "Director · art director · motion & video"},
+      "intro": {"ru": "Режиссура, моушн и визуальный язык. Короткий метр с призом за режиссуру, документальные и музыкальные работы, рекламные креативы для международной геймдев-студии и генеративное видео — с собственной камерой, монтажом и цветом.",
+                "en": "Direction, motion and visual language. A short film awarded for direction, documentary and music videos, ad creatives for an international game studio and generative video — with my own camera, editing and colour."},
+      "cases": ["on-off-studio", "slowdive", "g5-games", "iskusstvo-kino", "recent-work", "setl-group"],
+      "sections": ["work", "practice", "expertise", "about", "contact"],
+      "about": ["intro", "focus", "projects", "open"],
+      "ticker": "DIRECTION · MOTION · FILM",
+      "cv": "assets/cv.pdf"
+    },
+    {
+      "id": "writing",
+      "title": "Editor · Film Critic",
+      "role": {"ru": "Редактор · кинокритик · автор",
+               "en": "Editor · film critic · writer"},
+      "intro": {"ru": "Пишу о кино, литературе и играх; работала в редакционном потоке «Искусства кино» — дизайн, вёрстка смыслов и корректура. Сценарии и сценарные структуры для видео, подкаст с нуля до топ-5 рубрики.",
+                "en": "I write about cinema, literature and games; I worked in the editorial flow of Iskusstvo Kino — design, editorial framing and proofreading. Scripts and script structures for video, a podcast grown from zero to a top-5 in its category."},
+      "cases": ["iskusstvo-kino", "setl-group", "on-off-studio"],
+      "sections": ["writing", "work", "process", "about", "contact"],
+      "about": ["writing", "intro", "projects", "open"],
+      "ticker": "FILM CRITICISM · EDITORIAL · ESSAYS",
+      "cv": "assets/cv.pdf"
+    },
+    {
+      "id": "product",
+      "title": "Creative Lead · AI Production",
+      "role": {"ru": "Арт-директор · AI-продакшн · performance-креативы",
+               "en": "Art director · AI production · performance creatives"},
+      "intro": {"ru": "Строю продакшн-пайплайны, в которых команда быстро проверяет визуальные гипотезы: генеративные креативы для платной рекламы, моушн для мидкорных игр с метрикой retention, корпоративный YouTube с нуля до 25 000+ подписчиков.",
+                "en": "I build production pipelines that let a team test visual hypotheses fast: generative creatives for paid ads, motion for midcore games measured by retention, a corporate YouTube grown from zero to 25,000+ subscribers."},
+      "cases": ["slowdive", "g5-games", "recent-work", "setl-group"],
+      "sections": ["work", "expertise", "process", "about", "contact"],
+      "about": ["projects", "ai", "intro", "open"],
+      "ticker": "AI PIPELINES · PERFORMANCE CREATIVES · MOTION",
+      "cv": "assets/cv.pdf"
+    }
+  ],
+
+  "about": {
+    "intro": {"ru": "Наталия Терещенко, арт-директор в области генеративных медиа. Более одиннадцати лет в визуальных индустриях: режиссура, монтаж, моушн-дизайн, VFX, промпт-инженерия. Образование: режиссура мультимедиа программ (СПбГУП, 2017), киножурналистика (ШИКИ, 2022), VFX (VFX LAB, 2023). Короткометражный фильм «Стример» — приз за режиссуру фестиваля «Старкон», 2017.",
+              "en": "Natalia Tereshchenko, art director in generative media. Over eleven years in visual industries: direction, editing, motion design, VFX, prompt engineering. Education: multimedia direction (SPbGUP, 2017), film journalism (SHIKI, 2022), VFX (VFX LAB, 2023). Short film \"Streamer\" — Best Direction at Starcon, 2017."},
+    "projects": {"ru": "Веду проекты от брифа до приёмки. Руковожу процессом в небольших группах и работаю внутри больших команд — в том числе в пайплайне международной студии. Выстраиваю пайплайн с нуля там, где его нет, провожу пресейл-презентации, работаю с креативными продюсерами, держу процессы в проектах с меняющимся брифом. В Setl Group развила корпоративный YouTube с нуля до более чем 25 000 подписчиков и запустила подкаст, вошедший в топ-5 рубрики.",
+                 "en": "I run projects from brief to delivery. I lead processes in small groups and work inside larger teams — including the pipeline of an international studio. I build pipelines from scratch where none exist, run pre-sale pitches, work with creative producers and hold processes together when the brief keeps changing. At Setl Group I grew a corporate YouTube from zero to over 25,000 subscribers and launched a podcast that reached the top 5 of its category."},
+    "ai": {"ru": "С нейросетями работаю системно: выстраиваю пайплайны генерации под эстетику продукта, тренирую модели под запрос, разворачиваю локальные серверы, пишу воспроизводимые промпты.",
+           "en": "I work with neural networks systematically: I build generation pipelines aligned with product aesthetics, train models for specific needs, deploy local servers and write reproducible prompts."},
+    "focus": {"ru": "Исследовательский фокус — режиссура мультимедиа и геймдизайн с генеративными инструментами: сценарные структуры через нейросети, визуальный мир игры в смешанном пайплайне, real-time системы в TouchDesigner и Unreal Engine для инсталляций и выставок.",
+              "en": "Research focus — multimedia direction and game design with generative tools: script structures through LLMs, a game's visual world in a hybrid pipeline, real-time systems in TouchDesigner and Unreal Engine for installations and exhibitions."},
+    "writing": {"ru": "Пишу кинокритику и литературные заметки — в канале @bluenoisee и на Teletype (@whimstation); соавтор большого материала «Искусства кино» о корейском кино. В редакции журнала вела визуальный поток соцсетей и корректорскую приёмку новостей.",
+                "en": "I write film criticism and literary notes — on the @bluenoisee channel and on Teletype (@whimstation); co-author of Iskusstvo Kino's long-form piece on Korean cinema. At the journal I ran the visual flow of its social media and proofread the news intake."},
+    "open": {"ru": "Открыта к арт-директорским, режиссёрским, редакционным и продуктовым ролям: киностудии, продакшны, музеи и галереи, издательства, обучающие платформы и AI-продукты.",
+             "en": "Open to art director, director, editorial and product roles: film studios, production houses, museums and galleries, publishers, EdTech platforms and AI products."}
+  },
+
+  "cards": {
+    "slowdive":       {"title": "SlowDive", "years": "2024→",
+                       "line": {"ru": "Prompt motion direction · приложение для медитаций", "en": "Prompt motion direction · meditation app"},
+                       "thumbs": ["sd-02", "sd-08", "sd-06"]},
+    "g5-games":       {"title": "G5 Games", "years": "2022–23",
+                       "line": {"ru": "Моушн-дизайн рекламных креативов · международная геймдев-студия", "en": "Motion design for ad creatives · international game studio"},
+                       "thumbs": ["g5-jow-st0194", "g5-slk-sd-027", "g5-jod-st0003"]},
+    "on-off-studio":  {"title": "On/Off studio", "years": "2017–18",
+                       "line": {"ru": "Режиссура · короткий метр «Стример», документальное, промо, клипы", "en": "Direction · short film \"Streamer\", documentary, promo, music videos"},
+                       "thumbs": ["onoff-streamer"]},
+    "recent-work":    {"title": "Recent work / Freelance", "years": "2023→",
+                       "line": {"ru": "Bumpin Pro · Kstudio · duality vpn", "en": "Bumpin Pro · Kstudio · duality vpn"},
+                       "thumbs": ["rw-kstudio-1", "rw-bumpin", "rw-kstudio-3"]},
+    "setl-group":     {"title": "Setl Group", "years": "2018–21",
+                       "line": {"ru": "Видео и подкаст · YouTube с нуля до 25K+", "en": "Video & podcast · YouTube from zero to 25K+"},
+                       "thumbs": ["setl-hero"]},
+    "iskusstvo-kino": {"title": {"ru": "«Искусство кино»", "en": "Iskusstvo Kino"}, "years": "2022",
+                       "line": {"ru": "Редакционный дизайн соцсетей старейшего журнала о кино", "en": "Editorial social design for Europe's oldest film journal"},
+                       "thumbs": ["img:iskusstvo/01.jpg", "img:iskusstvo/04.jpg", "img:iskusstvo/07.jpg"]}
+  }
+}
