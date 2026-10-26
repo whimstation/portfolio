@@ -10,16 +10,25 @@ OUT = os.path.join(ROOT, 'media')
 os.makedirs(OUT, exist_ok=True)
 
 
+LOG = []
+
+
 def run(cmd):
-    print('$', ' '.join(cmd)[:200], flush=True)
-    return subprocess.run(cmd).returncode == 0
+    r = subprocess.run(cmd, capture_output=True, text=True)
+    LOG.append('$ ' + ' '.join(cmd)[:160] + f'  -> {r.returncode}\n' + (r.stdout + r.stderr)[-600:])
+    print(LOG[-1], flush=True)
+    return r.returncode == 0
 
 
 def download(m, tmp):
     if 'drive' in m:
         dst = os.path.join(tmp, 'src')
-        if run(['gdown', '--fuzzy', '-q', '-O', dst, f'https://drive.google.com/file/d/{m["drive"]}/view']) and os.path.getsize(dst) > 50000:
-            return dst
+        i = m['drive']
+        for cmd in (['curl', '-sSL', '--fail', '-o', dst, f'https://drive.usercontent.google.com/download?id={i}&export=download&confirm=t'],
+                    ['gdown', '--fuzzy', '-O', dst, f'https://drive.google.com/file/d/{i}/view']):
+            if run(cmd) and os.path.exists(dst) and os.path.getsize(dst) > 50000 and \
+                    run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', dst]):
+                return dst
     ids = [m['yt']] if 'yt' in m else []
     ids += [o for o in m.get('old', []) if len(o) == 11]
     for y in ids:
@@ -55,5 +64,6 @@ for slug, m in MEDIA.items():
             run(['ffmpeg', '-y', '-loglevel', 'error', '-i', mp4, '-frames:v', '1', '-q:v', '4', jpg])
         print(f'OK {slug}: {os.path.getsize(mp4) // 1024} KB', flush=True)
 
+open(os.path.join(OUT, '_log.txt'), 'w').write('\n'.join(LOG[-150:]))
 open(os.path.join(OUT, '_missing.txt'), 'w').write('\n'.join(failed) + ('\n' if failed else ''))
 print('missing:', failed or 'none')
