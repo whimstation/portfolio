@@ -1,209 +1,402 @@
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpe0bpc8fa/yt.%(ext)s https://www.youtube.com/watch?v=IdjfGNnEJZ8  -> 1
-ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpe0bpc8fa/yt.%(ext)s ht  -> 1
-ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpe0bpc8fa/yt.%(ext)s h  -> 1
-ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpe0bpc8fa/yt.%(ext)s htt  -> 1
-ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpe0bpc8fa/yt.%(ext)s https://ww  -> 1
-ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpe0bpc8fa/yt.%(ext)s https://w  -> 1
-ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpe0bpc8fa/yt.%(ext)s https://www  -> 1
-ERROR: [youtube] IdjfGNnEJZ8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu0x0ae5u/yt.%(ext)s https://www.youtube.com/watch?v=4USr0ds-Pts  -> 1
-ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu0x0ae5u/yt.%(ext)s ht  -> 1
-ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu0x0ae5u/yt.%(ext)s h  -> 1
-ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu0x0ae5u/yt.%(ext)s htt  -> 1
-ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu0x0ae5u/yt.%(ext)s https://ww  -> 1
-ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu0x0ae5u/yt.%(ext)s https://w  -> 1
-ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpu0x0ae5u/yt.%(ext)s https://www  -> 1
-ERROR: [youtube] 4USr0ds-Pts: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpftv7uksw/yt.%(ext)s https://www.youtube.com/watch?v=Y5eHpqU412Y  -> 1
-ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpftv7uksw/yt.%(ext)s ht  -> 1
-ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpftv7uksw/yt.%(ext)s h  -> 1
-ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpftv7uksw/yt.%(ext)s htt  -> 1
-ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpftv7uksw/yt.%(ext)s https://ww  -> 1
-ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpftv7uksw/yt.%(ext)s https://w  -> 1
-ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpftv7uksw/yt.%(ext)s https://www  -> 1
-ERROR: [youtube] Y5eHpqU412Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpohwt0zzi/yt.%(ext)s https://www.youtube.com/watch?v=JVDcFhWzQX0  -> 1
-ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpohwt0zzi/yt.%(ext)s ht  -> 1
-ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpohwt0zzi/yt.%(ext)s h  -> 1
-ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpohwt0zzi/yt.%(ext)s htt  -> 1
-ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpohwt0zzi/yt.%(ext)s https://ww  -> 1
-ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpohwt0zzi/yt.%(ext)s https://w  -> 1
-ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpohwt0zzi/yt.%(ext)s https://www  -> 1
-ERROR: [youtube] JVDcFhWzQX0: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
-
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xd6ihjv/yt.%(ext)s https://www.youtube.com/watch?v=mNnjZSLsuC8  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpdl4oq0io/yt.%(ext)s https://www  -> 1
 ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xd6ihjv/yt.%(ext)s ht  -> 1
-ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://inv.nadeko.net/latest_version?id=mNnjZSLsuC8&itag=22&local=true  -> 22
+curl: (22) The requested URL returned error: 500
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xd6ihjv/yt.%(ext)s h  -> 1
-ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://inv.nadeko.net/latest_version?id=mNnjZSLsuC8&itag=18&local=true  -> 22
+curl: (22) The requested URL returned error: 500
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xd6ihjv/yt.%(ext)s htt  -> 1
-ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://invidious.nerdvpn.de/latest_version?id=mNnjZSLsuC8&itag=22&local=true  -> 92
+curl: (92) HTTP/2 stream 1 was not closed cleanly: PROTOCOL_ERROR (err 1)
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xd6ihjv/yt.%(ext)s https://ww  -> 1
-ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://invidious.nerdvpn.de/latest_version?id=mNnjZSLsuC8&itag=18&local=true  -> 92
+curl: (92) HTTP/2 stream 1 was not closed cleanly: PROTOCOL_ERROR (err 1)
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xd6ihjv/yt.%(ext)s https://w  -> 1
-ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://yewtu.be/latest_version?id=mNnjZSLsuC8&itag=22&local=true  -> 0
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp4xd6ihjv/yt.%(ext)s https://www  -> 1
-ERROR: [youtube] mNnjZSLsuC8: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://yewtu.be/latest_version?id=mNnjZSLsuC8&itag=18&local=true  -> 0
 
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp_5b0y5ly/yt.%(ext)s https://www.youtube.com/watch?v=1G7r0q5Bwus  -> 1
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://invidious.privacyredirect.com/latest_version?id=mNnjZSLsuC8&itag=22&local=  -> 22
+curl: (22) The requested URL returned error: 404
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://invidious.privacyredirect.com/latest_version?id=mNnjZSLsuC8&itag=18&local=  -> 22
+curl: (22) The requested URL returned error: 404
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://iv.melmac.space/latest_version?id=mNnjZSLsuC8&itag=22&local=true  -> 7
+curl: (7) Failed to connect to iv.melmac.space port 443 after 395 ms: Couldn't connect to server
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://iv.melmac.space/latest_version?id=mNnjZSLsuC8&itag=18&local=true  -> 7
+curl: (7) Failed to connect to iv.melmac.space port 443 after 2 ms: Couldn't connect to server
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://invidious.f5.si/latest_version?id=mNnjZSLsuC8&itag=22&local=true  -> 22
+curl: (22) The requested URL returned error: 530
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://invidious.f5.si/latest_version?id=mNnjZSLsuC8&itag=18&local=true  -> 22
+curl: (22) The requested URL returned error: 530
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://id.420129.xyz/latest_version?id=mNnjZSLsuC8&itag=22&local=true  -> 6
+curl: (6) Could not resolve host: id.420129.xyz
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://id.420129.xyz/latest_version?id=mNnjZSLsuC8&itag=18&local=true  -> 6
+curl: (6) Could not resolve host: id.420129.xyz
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://invidious.jing.rocks/latest_version?id=mNnjZSLsuC8&itag=22&local=true  -> 6
+curl: (6) Could not resolve host: invidious.jing.rocks
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpdl4oq0io/mirror.mp4 https://invidious.jing.rocks/latest_version?id=mNnjZSLsuC8&itag=18&local=true  -> 6
+curl: (6) Could not resolve host: invidious.jing.rocks
+
+piped https://pipedapi.kavin.rocks mNnjZSLsuC8: HTTP Error 526: <none>
+piped https://pipedapi.adminforge.de mNnjZSLsuC8: <urlopen error [Errno 101] Network is unreachable>
+piped https://api.piped.private.coffee mNnjZSLsuC8: HTTP Error 500: Internal Server Error
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphic5bd2a/yt.%(ext)s https://www.youtube.com/watch?v=1G7r0q5Bwus  -> 1
 ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp_5b0y5ly/yt.%(ext)s ht  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphic5bd2a/yt.%(ext)s ht  -> 1
 ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp_5b0y5ly/yt.%(ext)s h  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphic5bd2a/yt.%(ext)s h  -> 1
 ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp_5b0y5ly/yt.%(ext)s htt  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphic5bd2a/yt.%(ext)s htt  -> 1
 ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp_5b0y5ly/yt.%(ext)s https://ww  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphic5bd2a/yt.%(ext)s https://ww  -> 1
 ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp_5b0y5ly/yt.%(ext)s https://w  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphic5bd2a/yt.%(ext)s https://w  -> 1
 ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp_5b0y5ly/yt.%(ext)s https://www  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphic5bd2a/yt.%(ext)s https://www  -> 1
 ERROR: [youtube] 1G7r0q5Bwus: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpzz10vkt8/yt.%(ext)s https://www.youtube.com/watch?v=v8i25gDDUAA  -> 1
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://inv.nadeko.net/latest_version?id=1G7r0q5Bwus&itag=22&local=true  -> 22
+curl: (22) The requested URL returned error: 500
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://inv.nadeko.net/latest_version?id=1G7r0q5Bwus&itag=18&local=true  -> 22
+curl: (22) The requested URL returned error: 500
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://invidious.nerdvpn.de/latest_version?id=1G7r0q5Bwus&itag=22&local=true  -> 92
+curl: (92) HTTP/2 stream 1 was not closed cleanly: PROTOCOL_ERROR (err 1)
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://invidious.nerdvpn.de/latest_version?id=1G7r0q5Bwus&itag=18&local=true  -> 92
+curl: (92) HTTP/2 stream 1 was not closed cleanly: PROTOCOL_ERROR (err 1)
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://yewtu.be/latest_version?id=1G7r0q5Bwus&itag=22&local=true  -> 0
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://yewtu.be/latest_version?id=1G7r0q5Bwus&itag=18&local=true  -> 0
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://invidious.privacyredirect.com/latest_version?id=1G7r0q5Bwus&itag=22&local=  -> 22
+curl: (22) The requested URL returned error: 404
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://invidious.privacyredirect.com/latest_version?id=1G7r0q5Bwus&itag=18&local=  -> 22
+curl: (22) The requested URL returned error: 404
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://iv.melmac.space/latest_version?id=1G7r0q5Bwus&itag=22&local=true  -> 7
+curl: (7) Failed to connect to iv.melmac.space port 443 after 2 ms: Couldn't connect to server
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://iv.melmac.space/latest_version?id=1G7r0q5Bwus&itag=18&local=true  -> 7
+curl: (7) Failed to connect to iv.melmac.space port 443 after 1 ms: Couldn't connect to server
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://invidious.f5.si/latest_version?id=1G7r0q5Bwus&itag=22&local=true  -> 22
+curl: (22) The requested URL returned error: 530
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://invidious.f5.si/latest_version?id=1G7r0q5Bwus&itag=18&local=true  -> 22
+curl: (22) The requested URL returned error: 530
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://id.420129.xyz/latest_version?id=1G7r0q5Bwus&itag=22&local=true  -> 6
+curl: (6) Could not resolve host: id.420129.xyz
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://id.420129.xyz/latest_version?id=1G7r0q5Bwus&itag=18&local=true  -> 6
+curl: (6) Could not resolve host: id.420129.xyz
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://invidious.jing.rocks/latest_version?id=1G7r0q5Bwus&itag=22&local=true  -> 6
+curl: (6) Could not resolve host: invidious.jing.rocks
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmphic5bd2a/mirror.mp4 https://invidious.jing.rocks/latest_version?id=1G7r0q5Bwus&itag=18&local=true  -> 6
+curl: (6) Could not resolve host: invidious.jing.rocks
+
+piped https://pipedapi.kavin.rocks 1G7r0q5Bwus: HTTP Error 526: <none>
+piped https://pipedapi.adminforge.de 1G7r0q5Bwus: <urlopen error [Errno 101] Network is unreachable>
+piped https://api.piped.private.coffee 1G7r0q5Bwus: HTTP Error 500: Internal Server Error
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpfeqplrxr/yt.%(ext)s https://www.youtube.com/watch?v=v8i25gDDUAA  -> 1
 ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpzz10vkt8/yt.%(ext)s ht  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpfeqplrxr/yt.%(ext)s ht  -> 1
 ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpzz10vkt8/yt.%(ext)s h  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpfeqplrxr/yt.%(ext)s h  -> 1
 ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpzz10vkt8/yt.%(ext)s htt  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpfeqplrxr/yt.%(ext)s htt  -> 1
 ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpzz10vkt8/yt.%(ext)s https://ww  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpfeqplrxr/yt.%(ext)s https://ww  -> 1
 ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpzz10vkt8/yt.%(ext)s https://w  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpfeqplrxr/yt.%(ext)s https://w  -> 1
 ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpzz10vkt8/yt.%(ext)s https://www  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpfeqplrxr/yt.%(ext)s https://www  -> 1
 ERROR: [youtube] v8i25gDDUAA: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp2sxmz0ri/yt.%(ext)s https://www.youtube.com/watch?v=t7ha8Gd2CUY  -> 1
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://inv.nadeko.net/latest_version?id=v8i25gDDUAA&itag=22&local=true  -> 22
+curl: (22) The requested URL returned error: 500
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://inv.nadeko.net/latest_version?id=v8i25gDDUAA&itag=18&local=true  -> 22
+curl: (22) The requested URL returned error: 500
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://invidious.nerdvpn.de/latest_version?id=v8i25gDDUAA&itag=22&local=true  -> 92
+curl: (92) HTTP/2 stream 1 was not closed cleanly: PROTOCOL_ERROR (err 1)
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://invidious.nerdvpn.de/latest_version?id=v8i25gDDUAA&itag=18&local=true  -> 92
+curl: (92) HTTP/2 stream 1 was not closed cleanly: PROTOCOL_ERROR (err 1)
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://yewtu.be/latest_version?id=v8i25gDDUAA&itag=22&local=true  -> 0
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://yewtu.be/latest_version?id=v8i25gDDUAA&itag=18&local=true  -> 0
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://invidious.privacyredirect.com/latest_version?id=v8i25gDDUAA&itag=22&local=  -> 22
+curl: (22) The requested URL returned error: 404
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://invidious.privacyredirect.com/latest_version?id=v8i25gDDUAA&itag=18&local=  -> 22
+curl: (22) The requested URL returned error: 404
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://iv.melmac.space/latest_version?id=v8i25gDDUAA&itag=22&local=true  -> 7
+curl: (7) Failed to connect to iv.melmac.space port 443 after 334 ms: Couldn't connect to server
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://iv.melmac.space/latest_version?id=v8i25gDDUAA&itag=18&local=true  -> 7
+curl: (7) Failed to connect to iv.melmac.space port 443 after 350 ms: Couldn't connect to server
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://invidious.f5.si/latest_version?id=v8i25gDDUAA&itag=22&local=true  -> 22
+curl: (22) The requested URL returned error: 530
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://invidious.f5.si/latest_version?id=v8i25gDDUAA&itag=18&local=true  -> 22
+curl: (22) The requested URL returned error: 530
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://id.420129.xyz/latest_version?id=v8i25gDDUAA&itag=22&local=true  -> 6
+curl: (6) Could not resolve host: id.420129.xyz
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://id.420129.xyz/latest_version?id=v8i25gDDUAA&itag=18&local=true  -> 6
+curl: (6) Could not resolve host: id.420129.xyz
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://invidious.jing.rocks/latest_version?id=v8i25gDDUAA&itag=22&local=true  -> 6
+curl: (6) Could not resolve host: invidious.jing.rocks
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpfeqplrxr/mirror.mp4 https://invidious.jing.rocks/latest_version?id=v8i25gDDUAA&itag=18&local=true  -> 6
+curl: (6) Could not resolve host: invidious.jing.rocks
+
+piped https://pipedapi.kavin.rocks v8i25gDDUAA: HTTP Error 526: <none>
+piped https://pipedapi.adminforge.de v8i25gDDUAA: <urlopen error [Errno 101] Network is unreachable>
+piped https://api.piped.private.coffee v8i25gDDUAA: HTTP Error 500: Internal Server Error
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp5q82yxwq/yt.%(ext)s https://www.youtube.com/watch?v=t7ha8Gd2CUY  -> 1
 ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp2sxmz0ri/yt.%(ext)s ht  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp5q82yxwq/yt.%(ext)s ht  -> 1
 ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp2sxmz0ri/yt.%(ext)s h  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp5q82yxwq/yt.%(ext)s h  -> 1
 ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp2sxmz0ri/yt.%(ext)s htt  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp5q82yxwq/yt.%(ext)s htt  -> 1
 ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp2sxmz0ri/yt.%(ext)s https://ww  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp5q82yxwq/yt.%(ext)s https://ww  -> 1
 ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp2sxmz0ri/yt.%(ext)s https://w  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp5q82yxwq/yt.%(ext)s https://w  -> 1
 ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp2sxmz0ri/yt.%(ext)s https://www  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp5q82yxwq/yt.%(ext)s https://www  -> 1
 ERROR: [youtube] t7ha8Gd2CUY: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp8puoqu7i/yt.%(ext)s https://www.youtube.com/watch?v=S4vb2Ay8VNc  -> 1
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://inv.nadeko.net/latest_version?id=t7ha8Gd2CUY&itag=22&local=true  -> 22
+curl: (22) The requested URL returned error: 500
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://inv.nadeko.net/latest_version?id=t7ha8Gd2CUY&itag=18&local=true  -> 22
+curl: (22) The requested URL returned error: 500
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://invidious.nerdvpn.de/latest_version?id=t7ha8Gd2CUY&itag=22&local=true  -> 92
+curl: (92) HTTP/2 stream 1 was not closed cleanly: PROTOCOL_ERROR (err 1)
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://invidious.nerdvpn.de/latest_version?id=t7ha8Gd2CUY&itag=18&local=true  -> 92
+curl: (92) HTTP/2 stream 1 was not closed cleanly: PROTOCOL_ERROR (err 1)
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://yewtu.be/latest_version?id=t7ha8Gd2CUY&itag=22&local=true  -> 0
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://yewtu.be/latest_version?id=t7ha8Gd2CUY&itag=18&local=true  -> 0
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://invidious.privacyredirect.com/latest_version?id=t7ha8Gd2CUY&itag=22&local=  -> 22
+curl: (22) The requested URL returned error: 404
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://invidious.privacyredirect.com/latest_version?id=t7ha8Gd2CUY&itag=18&local=  -> 22
+curl: (22) The requested URL returned error: 404
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://iv.melmac.space/latest_version?id=t7ha8Gd2CUY&itag=22&local=true  -> 7
+curl: (7) Failed to connect to iv.melmac.space port 443 after 346 ms: Couldn't connect to server
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://iv.melmac.space/latest_version?id=t7ha8Gd2CUY&itag=18&local=true  -> 7
+curl: (7) Failed to connect to iv.melmac.space port 443 after 450 ms: Couldn't connect to server
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://invidious.f5.si/latest_version?id=t7ha8Gd2CUY&itag=22&local=true  -> 22
+curl: (22) The requested URL returned error: 530
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://invidious.f5.si/latest_version?id=t7ha8Gd2CUY&itag=18&local=true  -> 22
+curl: (22) The requested URL returned error: 530
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://id.420129.xyz/latest_version?id=t7ha8Gd2CUY&itag=22&local=true  -> 6
+curl: (6) Could not resolve host: id.420129.xyz
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://id.420129.xyz/latest_version?id=t7ha8Gd2CUY&itag=18&local=true  -> 6
+curl: (6) Could not resolve host: id.420129.xyz
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://invidious.jing.rocks/latest_version?id=t7ha8Gd2CUY&itag=22&local=true  -> 6
+curl: (6) Could not resolve host: invidious.jing.rocks
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp5q82yxwq/mirror.mp4 https://invidious.jing.rocks/latest_version?id=t7ha8Gd2CUY&itag=18&local=true  -> 6
+curl: (6) Could not resolve host: invidious.jing.rocks
+
+piped https://pipedapi.kavin.rocks t7ha8Gd2CUY: HTTP Error 526: <none>
+piped https://pipedapi.adminforge.de t7ha8Gd2CUY: <urlopen error [Errno 101] Network is unreachable>
+piped https://api.piped.private.coffee t7ha8Gd2CUY: HTTP Error 500: Internal Server Error
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpx6l5mxik/yt.%(ext)s https://www.youtube.com/watch?v=S4vb2Ay8VNc  -> 1
 ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp8puoqu7i/yt.%(ext)s ht  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpx6l5mxik/yt.%(ext)s ht  -> 1
 ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp8puoqu7i/yt.%(ext)s h  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpx6l5mxik/yt.%(ext)s h  -> 1
 ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp8puoqu7i/yt.%(ext)s htt  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpx6l5mxik/yt.%(ext)s htt  -> 1
 ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp8puoqu7i/yt.%(ext)s https://ww  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpx6l5mxik/yt.%(ext)s https://ww  -> 1
 ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp8puoqu7i/yt.%(ext)s https://w  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpx6l5mxik/yt.%(ext)s https://w  -> 1
 ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp8puoqu7i/yt.%(ext)s https://www  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmpx6l5mxik/yt.%(ext)s https://www  -> 1
 ERROR: [youtube] S4vb2Ay8VNc: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphz99z8yf/yt.%(ext)s https://www.youtube.com/watch?v=I5iwMWRCfoU  -> 1
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://inv.nadeko.net/latest_version?id=S4vb2Ay8VNc&itag=22&local=true  -> 22
+curl: (22) The requested URL returned error: 500
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://inv.nadeko.net/latest_version?id=S4vb2Ay8VNc&itag=18&local=true  -> 22
+curl: (22) The requested URL returned error: 500
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://invidious.nerdvpn.de/latest_version?id=S4vb2Ay8VNc&itag=22&local=true  -> 92
+curl: (92) HTTP/2 stream 1 was not closed cleanly: PROTOCOL_ERROR (err 1)
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://invidious.nerdvpn.de/latest_version?id=S4vb2Ay8VNc&itag=18&local=true  -> 92
+curl: (92) HTTP/2 stream 1 was not closed cleanly: PROTOCOL_ERROR (err 1)
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://yewtu.be/latest_version?id=S4vb2Ay8VNc&itag=22&local=true  -> 0
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://yewtu.be/latest_version?id=S4vb2Ay8VNc&itag=18&local=true  -> 0
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://invidious.privacyredirect.com/latest_version?id=S4vb2Ay8VNc&itag=22&local=  -> 22
+curl: (22) The requested URL returned error: 404
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://invidious.privacyredirect.com/latest_version?id=S4vb2Ay8VNc&itag=18&local=  -> 22
+curl: (22) The requested URL returned error: 404
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://iv.melmac.space/latest_version?id=S4vb2Ay8VNc&itag=22&local=true  -> 7
+curl: (7) Failed to connect to iv.melmac.space port 443 after 350 ms: Couldn't connect to server
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://iv.melmac.space/latest_version?id=S4vb2Ay8VNc&itag=18&local=true  -> 7
+curl: (7) Failed to connect to iv.melmac.space port 443 after 467 ms: Couldn't connect to server
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://invidious.f5.si/latest_version?id=S4vb2Ay8VNc&itag=22&local=true  -> 22
+curl: (22) The requested URL returned error: 530
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://invidious.f5.si/latest_version?id=S4vb2Ay8VNc&itag=18&local=true  -> 22
+curl: (22) The requested URL returned error: 530
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://id.420129.xyz/latest_version?id=S4vb2Ay8VNc&itag=22&local=true  -> 6
+curl: (6) Could not resolve host: id.420129.xyz
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://id.420129.xyz/latest_version?id=S4vb2Ay8VNc&itag=18&local=true  -> 6
+curl: (6) Could not resolve host: id.420129.xyz
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://invidious.jing.rocks/latest_version?id=S4vb2Ay8VNc&itag=22&local=true  -> 6
+curl: (6) Could not resolve host: invidious.jing.rocks
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmpx6l5mxik/mirror.mp4 https://invidious.jing.rocks/latest_version?id=S4vb2Ay8VNc&itag=18&local=true  -> 6
+curl: (6) Could not resolve host: invidious.jing.rocks
+
+piped https://pipedapi.kavin.rocks S4vb2Ay8VNc: HTTP Error 526: <none>
+piped https://pipedapi.adminforge.de S4vb2Ay8VNc: <urlopen error [Errno 101] Network is unreachable>
+piped https://api.piped.private.coffee S4vb2Ay8VNc: HTTP Error 500: Internal Server Error
+$ yt-dlp -q --no-warnings -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp9vzsi_31/yt.%(ext)s https://www.youtube.com/watch?v=I5iwMWRCfoU  -> 1
 ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphz99z8yf/yt.%(ext)s ht  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp9vzsi_31/yt.%(ext)s ht  -> 1
 ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphz99z8yf/yt.%(ext)s h  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=web_embedded -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp9vzsi_31/yt.%(ext)s h  -> 1
 ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphz99z8yf/yt.%(ext)s htt  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=android_vr -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp9vzsi_31/yt.%(ext)s htt  -> 1
 ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphz99z8yf/yt.%(ext)s https://ww  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=ios -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp9vzsi_31/yt.%(ext)s https://ww  -> 1
 ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphz99z8yf/yt.%(ext)s https://w  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=mweb -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp9vzsi_31/yt.%(ext)s https://w  -> 1
 ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
 
-$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmphz99z8yf/yt.%(ext)s https://www  -> 1
+$ yt-dlp -q --no-warnings --extractor-args youtube:player_client=tv -f bv*[height<=1080]+ba/b --merge-output-format mp4 -o /tmp/tmp9vzsi_31/yt.%(ext)s https://www  -> 1
 ERROR: [youtube] I5iwMWRCfoU: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://inv.nadeko.net/latest_version?id=I5iwMWRCfoU&itag=22&local=true  -> 22
+curl: (22) The requested URL returned error: 500
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://inv.nadeko.net/latest_version?id=I5iwMWRCfoU&itag=18&local=true  -> 22
+curl: (22) The requested URL returned error: 500
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://invidious.nerdvpn.de/latest_version?id=I5iwMWRCfoU&itag=22&local=true  -> 92
+curl: (92) HTTP/2 stream 1 was not closed cleanly: PROTOCOL_ERROR (err 1)
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://invidious.nerdvpn.de/latest_version?id=I5iwMWRCfoU&itag=18&local=true  -> 92
+curl: (92) HTTP/2 stream 1 was not closed cleanly: PROTOCOL_ERROR (err 1)
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://yewtu.be/latest_version?id=I5iwMWRCfoU&itag=22&local=true  -> 0
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://yewtu.be/latest_version?id=I5iwMWRCfoU&itag=18&local=true  -> 0
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://invidious.privacyredirect.com/latest_version?id=I5iwMWRCfoU&itag=22&local=  -> 22
+curl: (22) The requested URL returned error: 404
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://invidious.privacyredirect.com/latest_version?id=I5iwMWRCfoU&itag=18&local=  -> 22
+curl: (22) The requested URL returned error: 404
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://iv.melmac.space/latest_version?id=I5iwMWRCfoU&itag=22&local=true  -> 7
+curl: (7) Failed to connect to iv.melmac.space port 443 after 2 ms: Couldn't connect to server
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://iv.melmac.space/latest_version?id=I5iwMWRCfoU&itag=18&local=true  -> 7
+curl: (7) Failed to connect to iv.melmac.space port 443 after 482 ms: Couldn't connect to server
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://invidious.f5.si/latest_version?id=I5iwMWRCfoU&itag=22&local=true  -> 22
+curl: (22) The requested URL returned error: 530
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://invidious.f5.si/latest_version?id=I5iwMWRCfoU&itag=18&local=true  -> 22
+curl: (22) The requested URL returned error: 530
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://id.420129.xyz/latest_version?id=I5iwMWRCfoU&itag=22&local=true  -> 6
+curl: (6) Could not resolve host: id.420129.xyz
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://id.420129.xyz/latest_version?id=I5iwMWRCfoU&itag=18&local=true  -> 6
+curl: (6) Could not resolve host: id.420129.xyz
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://invidious.jing.rocks/latest_version?id=I5iwMWRCfoU&itag=22&local=true  -> 6
+curl: (6) Could not resolve host: invidious.jing.rocks
+
+$ curl -sSL --fail --max-time 300 -A Mozilla/5.0 -o /tmp/tmp9vzsi_31/mirror.mp4 https://invidious.jing.rocks/latest_version?id=I5iwMWRCfoU&itag=18&local=true  -> 6
+curl: (6) Could not resolve host: invidious.jing.rocks
+
+piped https://pipedapi.kavin.rocks I5iwMWRCfoU: HTTP Error 526: <none>
+piped https://pipedapi.adminforge.de I5iwMWRCfoU: <urlopen error [Errno 101] Network is unreachable>
+piped https://api.piped.private.coffee I5iwMWRCfoU: HTTP Error 500: Internal Server Error
