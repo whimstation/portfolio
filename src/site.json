@@ -37,7 +37,7 @@
       "sections": ["work", "practice", "expertise", "about", "contact"],
       "about": ["intro", "focus", "projects", "open"],
       "ticker": "DIRECTION · MOTION · FILM",
-      "cv": "assets/cv.pdf"
+      "cv": "assets/cv-creative.pdf"
     },
     {
       "id": "writing",
@@ -50,7 +50,7 @@
       "sections": ["writing", "work", "process", "about", "contact"],
       "about": ["writing", "intro", "projects", "open"],
       "ticker": "FILM CRITICISM · EDITORIAL · ESSAYS",
-      "cv": "assets/cv.pdf"
+      "cv": "assets/cv-writing.pdf"
     },
     {
       "id": "product",
@@ -63,13 +63,13 @@
       "sections": ["work", "expertise", "process", "about", "contact"],
       "about": ["projects", "ai", "intro", "open"],
       "ticker": "AI PIPELINES · PERFORMANCE CREATIVES · MOTION",
-      "cv": "assets/cv.pdf"
+      "cv": "assets/cv-product.pdf"
     }
   ],
 
   "about": {
-    "intro": {"ru": "Наталия Терещенко, арт-директор в области генеративных медиа. Более одиннадцати лет в визуальных индустриях: режиссура, монтаж, моушн-дизайн, VFX, промпт-инженерия. Образование: режиссура мультимедиа программ (СПбГУП, 2017), киножурналистика (ШИКИ, 2022), VFX (VFX LAB, 2023). Короткометражный фильм «Стример» — приз за режиссуру фестиваля «Старкон», 2017.",
-              "en": "Natalia Tereshchenko, art director in generative media. Over eleven years in visual industries: direction, editing, motion design, VFX, prompt engineering. Education: multimedia direction (SPbGUP, 2017), film journalism (SHIKI, 2022), VFX (VFX LAB, 2023). Short film \"Streamer\" — Best Direction at Starcon, 2017."},
+    "intro": {"ru": "Наталия Терещенко, арт-директор в области генеративных медиа. Более одиннадцати лет в визуальных индустриях: режиссура, монтаж, моушн-дизайн, VFX, промпт-инженерия. Образование: режиссура мультимедиа программ (СПбГУП, 2017), киножурналистика (ШИКИ, 2022), VFX (VFX LAB, 2023). Короткометражный фильм «Стример» — приз за режиссуру фестиваля «Старкон», 2018.",
+              "en": "Natalia Tereshchenko, art director in generative media. Over eleven years in visual industries: direction, editing, motion design, VFX, prompt engineering. Education: multimedia direction (SPbGUP, 2017), film journalism (SHIKI, 2022), VFX (VFX LAB, 2023). Short film \"Streamer\" — Best Direction at Starcon, 2018."},
     "projects": {"ru": "Веду проекты от брифа до приёмки. Руковожу процессом в небольших группах и работаю внутри больших команд — в том числе в пайплайне международной студии. Выстраиваю пайплайн с нуля там, где его нет, провожу пресейл-презентации, работаю с креативными продюсерами, держу процессы в проектах с меняющимся брифом. В Setl Group развила корпоративный YouTube с нуля до более чем 25 000 подписчиков и запустила подкаст, вошедший в топ-5 рубрики.",
                  "en": "I run projects from brief to delivery. I lead processes in small groups and work inside larger teams — including the pipeline of an international studio. I build pipelines from scratch where none exist, run pre-sale pitches, work with creative producers and hold processes together when the brief keeps changing. At Setl Group I grew a corporate YouTube from zero to over 25,000 subscribers and launched a podcast that reached the top 5 of its category."},
     "ai": {"ru": "С нейросетями работаю системно: выстраиваю пайплайны генерации под эстетику продукта, тренирую модели под запрос, разворачиваю локальные серверы, пишу воспроизводимые промпты.",

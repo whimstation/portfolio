@@ -64,14 +64,14 @@ def player(slug, root):
             f'<button class="vid-cover" data-embed="{src}" aria-label="Play">{PLAY}</button>{badge}')
 
 
-def expand_media(s, root):
+def expand_media(s, root, cv='assets/cv.pdf'):
     s = re.sub(r'\[\[tile:([\w-]+)\]\]',
                lambda m: f'<div class="case-tile case-tile-{MEDIA[m.group(1)]["aspect"]}">{player(m.group(1), root)}</div>', s)
     s = re.sub(r'\[\[hero:([\w-]+)\]\]',
                lambda m: f'<div class="case-hero-video">{player(m.group(1), root)}</div>', s)
     s = re.sub(r'\[\[inline:([\w-]+)\]\]',
                lambda m: f'<div class="case-tile case-tile-16-9 inline-media">{player(m.group(1), root)}</div>', s)
-    return s.replace('{{root}}', root)
+    return s.replace('{{cv}}', root + cv).replace('{{root}}', root)
 
 
 def read(*p):
@@ -133,7 +133,7 @@ def page(title, desc, root, home, nav_html, main_html, ticker, version):
   <main>
 {main_html}
   </main>
-{meta_col(root, home)}
+{meta_col(root, home, version)}
 </div>
 
 <footer class="ticker">
@@ -148,7 +148,7 @@ def page(title, desc, root, home, nav_html, main_html, ticker, version):
 """
 
 
-def meta_col(root, home):
+def meta_col(root, home, version):
     return f"""  <aside class="meta-col" id="metaCol">
     <div class="meta-label">CONTACT</div>
     <div class="meta-val"><a href="mailto:{P['email']}">{P['email']}</a><br><a href="https://t.me/{P['telegram']}" target="_blank" rel="noopener">@{P['telegram']} · Telegram</a></div>
@@ -159,7 +159,7 @@ def meta_col(root, home):
     <div class="meta-label">YEARS IN VISUAL</div>
     <div class="meta-val">{P['years']}</div>
     <div class="meta-label">CV</div>
-    <div class="meta-val"><a href="{root}assets/cv.pdf" download class="cv-link">→ Download PDF</a></div>
+    <div class="meta-val"><a href="{root}{version['cv']}" download class="cv-link">→ Download PDF</a></div>
   </aside>"""
 
 
@@ -207,7 +207,7 @@ def build_home(version):
       <div class="hero-cta">
         <a href="mailto:{P['email']}" class="btn btn-accent">{P['email']}</a>
         <a href="https://t.me/{P['telegram']}" target="_blank" rel="noopener" class="btn">Telegram</a>
-        <a href="{root}assets/cv.pdf" download class="btn">CV · PDF</a>
+        <a href="{root}{version['cv']}" download class="btn">CV · PDF</a>
       </div>
     </section>"""
 
@@ -223,7 +223,7 @@ def build_home(version):
             body = about_section(version)
         else:
             body = read('sections', f'{sec}.html')
-        parts.append(f'    <section id="{sec}">\n{expand_media(body, root)}\n    </section>')
+        parts.append(f'    <section id="{sec}">\n{expand_media(body, root, version["cv"])}\n    </section>')
 
     # writing-версия: блок писем идёт первым после hero
     order = version['sections']
